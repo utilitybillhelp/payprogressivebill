@@ -25,7 +25,13 @@ body{
  font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial;
  background:var(--bg);
  color:#1f2937;
+ overflow-x:hidden;
 }
+ body::after{
+ content:"";
+ display:block;
+ height:90px;
+ }
 .container{
  max-width:1240px;
  margin:auto;
@@ -67,36 +73,54 @@ p{line-height:1.7;font-size:16px}
   color: black;
   text-decoration: none;
  }
-/* Floating Call */
+/* Floating Call FIXED (No CLS) */
 .floating-call{
   position:fixed;
   right:18px;
-  bottom:96px; /* overlap fix */
+  bottom:96px;
+
+  width:220px;
+  height:60px;
+
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+
   background:#003a8f;
   color:#fff;
-  padding:14px 20px;
   border-radius:42px;
   box-shadow:0 12px 28px rgba(0,0,0,.18);
   font-size:15px;
   z-index:999;
- }
- .floating-call:active{
+
+  transform:translateZ(0);
+}
+
+.floating-call:active{
   transform:scale(.98);
- }
-.floating-call span{display:block;font-size:12px;opacity:.9}
+}
 
+.floating-call span{
+  display:block;
+  font-size:12px;
+  opacity:.9;
+  color:#fff;
+}
+
+.floating-call a{
+  color:#fff !important;
+  text-decoration:none;
+}
+
+/* Mobile Fix */
 @media(max-width:600px){
- .hero{padding:36px 22px}
- h1{font-size:26px}
-}
- .floating-call a {
-  color: #fff !important;
-  text-decoration: none;
-}
-
-.floating-call span {
-  color: #fff;
-  opacity: 0.9;
+  .floating-call{
+    width:200px;
+    height:56px;
+    right:12px;
+    bottom:90px;
+  }
  }
  /* HERO FIX */
 .hero {
