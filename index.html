@@ -263,31 +263,48 @@ p{
  font-size:16px;
  margin:0 0 16px;
 }
-
-/* HERO — Same Publisher Look + Stable */
+/* HERO VISIBILITY + CLS SAFE FIX */
 .hero{
- background:linear-gradient(135deg,#003a8f,#0b5ed7);
+ background:linear-gradient(135deg,#003a8f 0%,#0b5ed7 100%);
  color:#fff;
  padding:46px 30px;
  border-radius:20px;
  min-height:250px;
- contain:layout paint;
+ position:relative;
+ overflow:hidden;
 }
 
 .hero h1{
- color:#fff;
+ color:#ffffff !important;
  font-weight:700;
- line-height:1.3;
- margin-bottom:12px;
+ line-height:1.25;
+ margin-bottom:14px;
+ text-shadow:0 1px 2px rgba(0,0,0,.18);
 }
 
 .hero p{
- color:#f0f6ff;
- max-width:950px;
+ color:#eef5ff !important;
  font-size:17px;
+ max-width:950px;
  margin:0;
+ line-height:1.75;
 }
 
+@media(max-width:600px){
+ .hero{
+  padding:34px 18px;
+  min-height:220px;
+  border-radius:16px;
+ }
+
+ .hero h1{
+  font-size:30px;
+ }
+
+ .hero p{
+  font-size:15px;
+ }
+}
 /* Jump Links */
 .jump{
  margin-top:22px;
