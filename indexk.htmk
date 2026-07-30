@@ -607,7 +607,7 @@
                     <i class="fas fa-shield-alt"></i> Progressive Billing Help
                 </div>
                 <div class="contact-info">
-                    <a href="tel:1-800-555-1234"><i class="fas fa-phone"></i> 1-800-555-1234</a>
+                    <a href="tel:1-888-414-4406"><i class="fas fa-phone"></i> 1-800-555-1234</a>
                     <a href="mailto:help@payprogressivebill.com"><i class="fas fa-envelope"></i> Email Us</a>
                 </div>
             </div>
@@ -619,7 +619,7 @@
             <h1>Progressive Insurance Billing Assistance</h1>
             <p>Having trouble with your Progressive insurance bill? Get immediate help from our billing experts. We resolve payment issues, disputes, and account problems quickly.</p>
             <div class="cta-buttons">
-                <a href="tel:1-800-555-1234" class="cta-button"><i class="fas fa-phone"></i> Call Now for Help</a>
+                <a href="tel:1-888-414-4406" class="cta-button"><i class="fas fa-phone"></i> Call Now for Help</a>
                 <a href="#billing-options" class="cta-button secondary">View Payment Options</a>
             </div>
         </div>
@@ -639,3 +639,1330 @@
                     <h3>Payment Solutions</h3>
                     <p>Find the right payment option for your situation, including payment plans, extensions, and alternative payment methods.</p>
                 </
+<div class="feature-card">
+                    <div class="feature-icon"><i class="fas fa-file-invoice"></i></div>
+                    <h3>Billing Dispute Help</h3>
+                    <p>Resolve incorrect charges, billing errors, and disputes with Progressive's billing department through our expert guidance.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fas fa-clock"></i></div>
+                    <h3>Grace Period Assistance</h3>
+                    <p>Understand and navigate Progressive's payment grace periods to avoid policy lapses and maintain coverage.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fas fa-redo"></i></div>
+                    <h3>Policy Reinstatement</h3>
+                    <p>Get help reinstating a lapsed policy and understand the requirements and potential costs involved.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fas fa-hand-holding-usd"></i></div>
+                    <h3>Financial Hardship Options</h3>
+                    <p>Explore payment assistance programs and options if you're experiencing financial difficulties with your premium.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="billing-process">
+        <div class="container">
+            <h2>Understanding Your Progressive Billing Cycle</h2>
+            <div class="process-timeline">
+                <div class="timeline-item left">
+                    <div class="timeline-content">
+                        <h3>1. Billing Statement</h3>
+                        <p>Progressive sends your billing statement approximately 30 days before your due date. This includes your premium amount, due date, and available payment options. You can also access your bill online through your Progressive account.</p>
+                    </div>
+                </div>
+                <div class="timeline-item right">
+                    <div class="timeline-content">
+                        <h3>2. Payment Window</h3>
+                        <p>You have until the due date to make your payment. Progressive offers multiple payment methods including online bill pay, phone payments, automatic deductions, and mail-in options. Many customers search for "progressive pay my bill online free" to find convenient payment solutions.</p>
+                    </div>
+                </div>
+                <div class="timeline-item left">
+                    <div class="timeline-content">
+                        <h3>3. Grace Period</h3>
+                        <p>Progressive typically offers a grace period after your due date (varies by state and policy type). During this time, your coverage remains active, but late fees may apply. It's important to understand your specific grace period to avoid policy cancellation.</p>
+                    </div>
+                </div>
+                <div class="timeline-item right">
+                    <div class="timeline-content">
+                        <h3>4. Cancellation Notice</h3>
+                        <p>If payment isn't received by the end of the grace period, Progressive will send a cancellation notice. This provides a final opportunity to make a payment and maintain coverage. The notice will specify the exact date and time your policy will cancel if payment isn't received.</p>
+                    </div>
+                </div>
+                <div class="timeline-item left">
+                    <div class="timeline-content">
+                        <h3>5. Policy Cancellation</h3>
+                        <p>If payment isn't made by the specified date and time, your policy will cancel. This results in a lapse of coverage and potential consequences. We can help you understand your options at this stage, including potential reinstatement.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="billing-options">
+        <div class="container">
+            <h2>Progressive Payment Options</h2>
+            <table class="options-table">
+                <thead>
+                    <tr>
+                        <th>Payment Method</th>
+                        <th>Processing Time</th>
+                        <th>Fees</th>
+                        <th>How to Access</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Online Bill Pay</strong></td>
+                        <td>Immediate</td>
+                        <td>No fee</td>
+                        <td>Progressive account login</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Automatic Payments</strong></td>
+                        <td>On due date</td>
+                        <td>No fee</td>
+                        <td>Set up in your account</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Pay by Phone</strong></td>
+                        <td>Immediate</td>
+                        <td>May apply</td>
+                        <td>Progressive's automated system</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Text to Pay</strong></td>
+                        <td>Immediate</td>
+                        <td>No fee</td>
+                        <td>Enroll in text reminders</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Mail-in Payment</strong></td>
+                        <td>5-10 business days</td>
+                        <td>No fee</td>
+                        <td>Send to address on bill</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Pay in Person</strong></td>
+                        <td>Immediate</td>
+                        <td>No fee</td>
+                        <td>Progressive service center</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Progressive App</strong></td>
+                        <td>Immediate</td>
+                        <td>No fee</td>
+                        <td>Download and login</td>
+                    </tr>
+                </tbody>
+            </table>
+            <p style="text-align: center; margin-top: 2rem; color: var(--light-text);">
+                Need help with <span class="highlight">progressive bill pay free</span> options? Call our specialists for guidance on the best payment method for your situation.
+            </p>
+        </div>
+    </section>
+
+    <section class="problem-solutions">
+        <div class="container">
+            <h2>Common Progressive Billing Issues & Solutions</h2>
+            <div class="solutions-grid">
+                <div class="solution-card">
+                    <h3><i class="fas fa-exclamation-circle"></i> Late Payment Issues</h3>
+                    <p>If you've missed your payment due date, here are your options:</p>
+                    <ul>
+                        <li>Make an immediate payment online or by phone to avoid cancellation</li>
+                        <li>Call us to explore payment extension options</li>
+                        <li>Set up automatic payments to prevent future late payments</li>
+                        <li>Check if you qualify for a grace period extension</li>
+                    </ul>
+                    <p><strong>Need immediate help?</strong> Call us now to discuss your specific situation.</p>
+                </div>
+                <div class="solution-card">
+                    <h3><i class="fas fa-times-circle"></i> Billing Errors</h3>
+                    <p>Incorrect charges on your Progressive bill can be frustrating. Here's what to do:</p>
+                    <ul>
+                        <li>Review your policy details to verify coverage and discounts</li>
+                        <li>Gather documentation of the error (screenshots, previous bills)</li>
+                        <li>Call Progressive directly or let us advocate for you</li>
+                        <li>Request a billing review if the error isn't immediately resolved</li>
+                    </ul>
+                    <p><strong>Document everything</strong> and keep records of all communications regarding billing disputes.</p>
+                </div>
+                <div class="solution-card">
+                    <h3><i class="fas fa-dollar-sign"></i> Unexpected Rate Increases</h3>
+                    <p>If your premium has increased unexpectedly, consider these steps:</p>
+                    <ul>
+                        <li>Review your renewal notice for explanation of changes</li>
+                        <li>Check for any changes in your coverage or discounts</li>
+                        <li>Ask about available discounts you might be missing</li>
+                        <li>Compare quotes from other insurers (we can help)</li>
+                    </ul>
+                    <p><strong>Tip:</strong> Sometimes adjusting your coverage or deductibles can help manage premium increases.</p>
+                </div>
+                <div class="solution-card">
+                    <h3><i class="fas fa-credit-card"></i> Payment Method Problems</h3>
+                    <p>Having trouble with your payment method? Try these solutions:</p>
+                    <ul>
+                        <li>Update your payment information in your Progressive account</li>
+                        <li>Try an alternative payment method if one is failing</li>
+                        <li>Contact your bank if there's a payment processing issue</li>
+                        <li>Consider using Progressive's pay-by-phone option for immediate processing</li>
+                    </ul>
+                    <p><strong>Remember:</strong> Many customers successfully use "progressive pay my bill online free" options to avoid payment method issues.</p>
+                </div>
+                <div class="solution-card">
+                    <h3><i class="fas fa-ban"></i> Policy Cancellation</h3>
+                    <p>If your policy has been canceled due to non-payment:</p>
+                    <ul>
+                        <li>Contact Progressive immediately to discuss reinstatement options</li>
+                        <li>Be prepared to pay the past-due amount plus any reinstatement fees</li>
+                        <li>Ask about any grace period that might still apply</li>
+                        <li>Consider temporary coverage alternatives while resolving the issue</li>
+                        <li>Understand that a lapse in coverage may affect future premiums</li>
+                    </ul>
+                    <p><strong>Act quickly:</strong> The longer you wait, the more difficult and expensive reinstatement becomes.</p>
+                </div>
+                <div class="solution-card">
+                    <h3><i class="fas fa-bell"></i> Missed Payment Notices</h3>
+                    <p>If you're receiving late payment notices but believe you've paid:</p>
+                    <ul>
+                        <li>Check your bank or credit card statements for proof of payment</li>
+                        <li>Verify the payment was made to the correct Progressive account</li>
+                        <li>Contact Progressive with your payment confirmation details</li>
+                        <li>Request a payment investigation if there's a discrepancy</li>
+                    </ul>
+                    <p><strong>Documentation is key:</strong> Keep all payment confirmations and notices for your records.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonial-section">
+        <div class="container">
+            <h2>What Our Customers Say</h2>
+            <div class="testimonials-container">
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        "I was facing cancellation of my auto policy due to a payment processing error. The team helped me resolve the issue with Progressive and get my policy reinstated. Their knowledge of Progressive's systems saved me from losing coverage."
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">JD</div>
+                        <div class="author-info">
+                            <h4>James D.</h4>
+                            <p>Progressive Customer since 2018</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        "My premium suddenly increased by 30% without explanation. The billing specialists helped me understand the reasons and worked with Progressive to find discounts I was eligible for. They saved me over $400 annually."
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">SM</div>
+                        <div class="author-info">
+                            <h4>Sarah M.</h4>
+                            <p>Progressive Customer since 2015</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        "I was struggling to make payments during a difficult financial period. The team helped me set up a payment plan with Progressive that worked with my budget. They were understanding, professional, and found a solution that kept my coverage active."
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">RJ</div>
+                        <div class="author-info">
+                            <h4>Robert J.</h4>
+                            <p>Progressive Customer since 2020</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="faq-section">
+        <div class="container">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question">How can I pay my Progressive bill online for free?<i class="fas fa-chevron-down"></i></div>
+                    <div class="faq-answer">
+                        <p>You can pay your Progressive bill online for free by logging into your account at progressive.com. Once logged in, navigate to the "Billing" section and select "Make a Payment." Progressive doesn't charge a fee for online payments made through their website or mobile app. This is the most convenient way to manage your "progressive pay my bill online free" needs.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">What happens if I miss my Progressive payment due date?<i class="fas fa-chevron-down"></i></div>
+                    <div class="faq-answer">
+                        <p>If you miss your payment due date, Progressive typically offers a grace period (varies by state and policy type). During this time, your coverage remains active, but late fees may apply. You'll receive a cancellation notice before your policy is canceled. It's important to make a payment as soon as possible to avoid policy cancellation and potential rate increases upon reinstatement.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">Can I change my Progressive billing due date?<i class="fas fa-chevron-down"></i></div>
+                    <div class="faq-answer">
+                        <p>Yes, you can typically change your Progressive billing due date by contacting their customer service. You may need to make an adjustment payment to align with your new preferred date. Some policy types may have restrictions on when billing dates can be changed. Call us if you need assistance with this process.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">What payment methods does Progressive accept?<i class="fas fa-chevron-down"></i></div>
+                    <div class="faq-answer">
+                        <p>Progressive accepts several payment methods including: checking/savings account (ACH), debit cards, credit cards (Visa, Mastercard, American Express, Discover), PayPal, and Apple Pay. You can also pay by phone, mail, or in person at a Progressive service center. Each method has different processing times, and some may have convenience fees.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">How do I dispute a charge on my Progressive bill?<i class="fas fa-chevron-down"></i></div>
+                    <div class="faq-answer">
+                        <p>To dispute a charge on your Progressive bill, first gather documentation supporting your claim. Then contact Progressive's billing department directly or work with us to advocate on your behalf. Explain the specific charge you're disputing and why. Progressive will investigate the dispute and typically provide a response within 10-14 business days. Keep records of all communications regarding the dispute.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">Does Progressive offer payment plans for financial hardship?<i class="fas fa-chevron-down"></i></div>
+                    <div class="faq-answer">
+                        <p>Progressive may offer payment arrangements or extensions for customers experiencing financial hardship. Options vary by situation and policy type. Contact Progressive directly to discuss your specific circumstances, or let us help you negotiate a payment plan that works with your budget. Be prepared to explain your situation and provide documentation if requested.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">Can I get a refund if I overpay my Progressive premium?<i class="fas fa-chevron-down"></i></div>
+                    <div class="faq-answer">
+                        <p>Yes, if you overpay your Progressive premium, you're entitled to a refund. The process typically takes 7-10 business days after the overpayment is confirmed. You can request the refund be sent as a check or deposited directly to your bank account. Alternatively, you can apply the overpayment as a credit toward your next premium.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>      
+
+    <section class="contact-cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Need Immediate Help With Your Progressive Bill?</h2>
+                <p>Our billing specialists are ready to help you resolve any issues with your Progressive insurance bill. Don't wait until your policy cancels - get the assistance you need today.</p>
+                <div class="cta-buttons">
+                    <a href="tel:1-888-414-4406" class="cta-button"><i class="fas fa-phone"></i> Call Now: 1-800-555-1234</a>
+                    <a href="#contact-form" class="cta-button secondary"><i class="fas fa-envelope"></i> Email Us</a>
+                </div>
+                <div class="contact-options">
+                    <div class="contact-option">
+                        <i class="fas fa-clock"></i>
+                        <h3>Available Hours</h3>
+                        <p>Monday-Friday: 8AM-8PM EST</p>
+                        <p>Saturday: 9AM-5PM EST</p>
+                        <p>Sunday: 10AM-4PM EST</p>
+                    </div>
+                    <div class="contact-option">
+                        <i class="fas fa-phone-volume"></i>
+                        <h3>Average Response Time</h3>
+                        <p>Phone calls: Under 2 minutes</p>
+                        <p>Emails: Within 24 hours</p>
+                    </div>
+                    <div class="contact-option">
+                        <i class="fas fa-check-circle"></i>
+                        <h3>Services We Provide</h3>
+                        <p>Billing dispute resolution</
+                        <p>Payment plan arrangements</p>
+                        <p>Policy reinstatement assistance</p>
+                        <p>Grace period extensions</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact-form" class="contact-form-section">
+        <div class="container">
+            <h2>Send Us a Message</h2>
+            <div class="contact-form-wrapper">
+                <form class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="policy">Policy Number (Optional)</label>
+                        <input type="text" id="policy" name="policy">
+                    </div>
+                    <div class="form-group">
+                        <label for="issue">Issue Type</label>
+                        <select id="issue" name="issue" required>
+                            <option value="">Please select an issue type</option>
+                            <option value="late-payment">Late Payment</option>
+                            <option value="billing-dispute">Billing Dispute</option>
+                            <option value="cancellation">Policy Cancellation</option>
+                            <option value="payment-method">Payment Method Issue</option>
+                            <option value="rate-increase">Unexpected Rate Increase</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Describe Your Issue</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <div class="form-group checkbox-group">
+                        <input type="checkbox" id="consent" name="consent" required>
+                        <label for="consent">I consent to being contacted about my inquiry and agree to the terms of service and privacy policy.</label>
+                    </div>
+                    <button type="submit" class="submit-button">Send Message</button>
+                </form>
+                <div class="contact-info-sidebar">
+                    <div class="sidebar-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h3>Direct Line</h3>
+                            <p>1-888-414-4406</p>
+                        </div>
+                    </div>
+                    <div class="sidebar-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h3>Email Us</h3>
+                            <p>help@payprogressivebill.com</p>
+                        </div>
+                    </div>
+                    <div class="sidebar-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h3>Response Time</h3>
+                            <p>We typically respond within 24 hours</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="resources-section">
+        <div class="container">
+            <h2>Additional Resources</h2>
+            <div class="resources-grid">
+                <div class="resource-card">
+                    <i class="fas fa-book"></i>
+                    <h3>Progressive Billing Guide</h3>
+                    <p>Download our comprehensive guide to understanding and managing your Progressive insurance bill.</p>
+                    <a href="#" class="resource-link">Download PDF</a>
+                </div>
+                <div class="resource-card">
+                    <i class="fas fa-calculator"></i>
+                    <h3>Payment Calculator</h3>
+                    <p>Calculate different payment options and see how they fit your budget with our interactive tool.</p>
+                    <a href="#" class="resource-link">Use Calculator</a>
+                </div>
+                <div class="resource-card">
+                    <i class="fas fa-shield-alt"></i>
+                    <h3>Insurance Coverage Guide</h3>
+                    <p>Understand your Progressive coverage options and how they affect your premium.</p>
+                    <a href="#" class="resource-link">View Guide</a>
+                </div>
+                <div class="resource-card">
+                    <i class="fas fa-file-invoice-dollar"></i>
+                    <h3>Discount Checklist</h3>
+                    <p>Make sure you're getting all available discounts with our comprehensive checklist.</p>
+                    <a href="#" class="resource-link">Get Checklist</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <style>
+        .contact-cta {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: white;
+            padding: 4rem 0;
+            text-align: center;
+        }
+        
+        .cta-content h2 {
+            font-size: 2.2rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        .cta-content p {
+            font-size: 1.1rem;
+            max-width: 800px;
+            margin: 0 auto 2.5rem;
+        }
+        
+        .contact-options {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin-top: 3rem;
+            flex-wrap: wrap;
+        }
+        
+        .contact-option {
+            background-color: rgba(255,255,255,0.1);
+            border-radius: 10px;
+            padding: 1.5rem;
+            max-width: 250px;
+            text-align: center;
+        }
+        
+        .contact-option i {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: rgba(255,255,255,0.8);
+        }
+        
+        .contact-option h3 {
+            margin-bottom: 0.5rem;
+        }
+        
+        .contact-option p {
+            margin-bottom: 0.3rem;
+            font-size: 0.95rem;
+        }
+        
+        .contact-form-section {
+            background-color: white;
+            padding: 4rem 0;
+        }
+        
+        .contact-form-section h2 {
+            text-align: center;
+            font-size: 2rem;
+            margin-bottom: 2.5rem;
+            color: var(--secondary-color);
+        }
+        
+        .contact-form-wrapper {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 3rem;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+        
+        .form-group {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .form-group label {
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+            color: var(--secondary-color);
+        }
+        
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            padding: 0.8rem;
+            border: 1px solid var(--border-color);
+            border-radius: 5px;
+            font-family: inherit;
+        }
+        
+        .checkbox-group {
+            flex-direction: row;
+            align-items: flex-start;
+            gap: 0.5rem;
+        }
+        
+        .checkbox-group input {
+            margin-top: 0.2rem;
+        }
+        
+        .submit-button {
+            background-color: var(--primary-color);
+            color: white;
+            border: none;
+            padding: 1rem;
+            font-size: 1.1rem;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            margin-top: 0.5rem;
+        }
+        
+        .submit-button:hover {
+            background-color: var(--secondary-color);
+        }
+        
+        .contact-info-sidebar {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+        
+        .sidebar-item {
+            display: flex;
+            gap: 1rem;
+            padding: 1.5rem;
+            background-color: var(--light-bg);
+            border-radius: 8px;
+        }
+        
+        .sidebar-item i {
+            font-size: 1.8rem;
+            color: var(--primary-color);
+        }
+        
+        .resources-section {
+            background-color: var(--light-bg);
+            padding: 4rem 0;
+        }
+        
+        .resources-section h2 {
+            text-align: center;
+            font-size: 2rem;
+            margin-bottom: 2.5rem;
+            color: var(--secondary-color);
+        }
+        
+        .resources-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+        
+        .resource-card {
+            background-color: white;
+            border-radius: 10px;
+            padding: 2rem;
+            box-shadow: 0 5px 15px rgba(0,0,0,0,0.05);
+            transition: all 0.3s ease;
+            text-align: center;
+        }
+        
+        .resource-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+        }
+        
+        .resource-card i {
+            font-size: 2.5rem;
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+        }
+        
+        .resource-card h3 {
+            margin-bottom: 1rem;
+            color: var(--secondary-color);
+        }
+        
+        .resource-card p {
+            color: var(--light-text);
+            margin-bottom: 1.5rem;
+        }
+        
+        .resource-link {
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: 600;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            transition: all 0.3s ease;
+        }
+        
+        .resource-link:hover {
+            color: var(--secondary-color);
+        }
+        
+        .resource-link::after {
+            content: "→";
+            transition: all 0.3s ease;
+        }
+        
+        .resource-link:hover::after {
+            transform: translateX(3px);
+        }
+        
+        @media screen and (max-width: 992px) {
+            .contact-form-wrapper {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+            
+            .contact-info-sidebar {
+                flex-direction: row;
+                justify-content: space-between;
+            }
+        }
+        
+        @media screen and (max-width: 768px) {
+            .contact-options {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .contact-option {
+                max-width: 100%;
+                width: 100%;
+            }
+            
+            .contact-info-sidebar {
+                flex-direction: column;
+            }
+            
+            .sidebar-item {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .sidebar-item i {
+                align-self: center;
+            }
+        }
+    </style>
+<script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // FAQ Accordion
+            const faqItems = document.querySelectorAll('.faq-item');
+            
+            faqItems.forEach(item => {
+                const question = item.querySelector('.faq-question');
+                
+                question.addEventListener('click', () => {
+                    // Toggle current item
+                    item.classList.toggle('active');
+                    
+                    // Close other items
+                    faqItems.forEach(otherItem => {
+                        if (otherItem !== item && otherItem.classList.contains('active')) {
+                            otherItem.classList.remove('active');
+                        }
+                    });
+                });
+            });
+            
+            // Contact Form
+            const contactForm = document.querySelector('.contact-form');
+            
+            if (contactForm) {
+                contactForm.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    
+                    // Get form values
+                    const name = document.getElementById('name').value;
+                    const phone = document.getElementById('phone').value;
+                    const email = document.getElementById('email').value;
+                    const policy = document.getElementById('policy').value;
+                    const issue = document.getElementById('issue').value;
+                    const message = document.getElementById('message').value;
+                    const consent = document.getElementById('consent').checked;
+                    
+                    // Simple validation
+                    if (!name || !phone || !email || !issue || !message || !consent) {
+                        alert('Please fill in all required fields and consent to being contacted.');
+                        return;
+                    }
+                    
+                    // Here you would normally submit the form to your server
+                    // For this demo, we'll just show a success message
+                    const formWrapper = document.querySelector('.contact-form-wrapper');
+                    formWrapper.innerHTML = `
+                        <div class="success-message">
+                            <i class="fas fa-check-circle"></i>
+                            <h3>Thank You!</h3>
+                            <p>Your message has been sent successfully. We'll contact you within 24 hours.</p>
+                            <a href="tel:1-800-555-1234" class="cta-button">Need Immediate Help? Call Now</a>
+                        </div>
+                    `;
+                });
+            }
+            
+            // Smooth scrolling for anchor links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    
+                    const targetId = this.getAttribute('href');
+                    if (targetId === '#') return;
+                    
+                    const targetElement = document.querySelector(targetId);
+                    
+                    if (targetElement) {
+                        window.scrollTo({
+                            top: targetElement.offsetTop - 80,
+                            behavior: 'smooth'
+                        });
+                    }
+                });
+            });
+            
+            // Add animation to elements when they come into view
+            const observerOptions = {
+                threshold: 0.1,
+                rootMargin: '0px 0px -50px 0px'
+            };
+            
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.opacity = '1';
+                        entry.target.style.transform = 'translateY(0)';
+                    }
+                });
+            }, observerOptions);
+            
+            // Apply observer to specific elements
+            const animateElements = document.querySelectorAll('.feature-card, .solution-card, .testimonial-card, .timeline-item');
+            
+            animateElements.forEach(el => {
+                el.style.opacity = '0';
+                el.style.transform = 'translateY(20px)';
+                el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+                observer.observe(el);
+            });
+        });
+    </script>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Progressive Billing Help</h3>
+                    <p>Your trusted resource for resolving Progressive insurance billing issues, payment problems, and account questions.</p>
+                    <div class="social-icons">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Billing Options</a></li>
+                        <li><a href="#">Payment Assistance</a></li>
+                        <li><a href="#">Billing Disputes</a></li>
+                        <li><a href="#">Policy Reinstatement</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Resources</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Progressive Billing Guide</a></li>
+                        <li><a href="#">Payment Calculator</a></li>
+                        <li><a href="#">Discount Checklist</a></li>
+                        <li><a href="#">Insurance Coverage Guide</a></li>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                        <li><a href="terms.html">Terms of Service</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <a href="tel:1-888-414-4406">Billing Assistance</a>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <a href="mailto:help@payprogressivebill.com">help@payprogressivebill.com</a>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-clock"></i>
+                            <p>Mon-Fri: 8AM-8PM EST<br>Sat: 9AM-5PM EST<br>Sun: 10AM-4PM EST</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2026 Progressive Billing Help. All rights reserved. This website is not affiliated with Progressive Insurance.</p>
+                <p>Progressive is a registered trademark of Progressive Casualty Insurance Company. All other trademarks are the property of their respective owners.</p>
+            </div>
+        </div>
+    </footer>
+
+    <style>
+        .footer-section {
+            flex: 1;
+            min-width: 200px;
+            margin-bottom: 2rem;
+        }
+        
+        .footer-section h3 {
+            font-size: 1.2rem;
+            margin-bottom: 1.5rem;
+            color: white;
+            position: relative;
+            padding-bottom: 0.5rem;
+        }
+        
+        .footer-section h3::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 50px;
+            height: 2px;
+            background-color: var(--primary-color);
+        }
+        
+        .footer-section p {
+            margin-bottom: 1.5rem;
+            color: rgba(255,255,255,0.8);
+            line-height: 1.7;
+        }
+        
+        .footer-links {
+            list-style: none;
+        }
+        
+        .footer-links li {
+            margin-bottom: 0.8rem;
+        }
+        
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+        
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 0.8rem;
+        }
+        
+        .contact-item i {
+            color: var(--primary-color);
+            font-size: 1.1rem;
+            width: 20px;
+        }
+        
+        .contact-item a {
+            color: rgba(255,255,255,0.8);
+        }
+        
+        .contact-item p {
+            margin-bottom: 0;
+            color: rgba(255,255,255,0.8);
+            font-size: 0.9rem;
+        }
+        
+        .success-message {
+            text-align: center;
+            padding: 2rem;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+        }
+        
+        .success-message i {
+            font-size: 3rem;
+            color: #4CAF50;
+            margin-bottom: 1rem;
+        }
+        
+        .success-message h3 {
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+            color: var(--secondary-color);
+        }
+        
+        .success-message p {
+            margin-bottom: 1.5rem;
+            color: var(--light-text);
+        }
+        
+        @media screen and (max-width: 768px) {
+            .footer-content {
+                flex-direction: column;
+                gap: 2rem;
+            }
+            
+            .footer-section {
+                width: 100%;}
+        
+        .copyright {
+            margin-top: 2rem;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            font-size: 0.9rem;
+            color: rgba(255,255,255,0.6);
+            text-align: center;
+        }
+        
+        .copyright p {
+            margin-bottom: 0.5rem;
+        }
+    </style>
+    <section class="credibility-section">
+        <div class="container">
+            <div class="credibility-content">
+                <div class="external-links">
+                    <h3>External Resources</h3>
+                    <p>These trusted third-party resources provide additional information about insurance billing and consumer rights:</p>
+                    <ul class="links-list">
+                        <li><a href="https://www.naic.org/" target="_blank" rel="noopener noreferrer">National Association of Insurance Commissioners - State insurance regulations</a></li>
+                        <li><a href="https://www.consumerfinance.gov/" target="_blank" rel="noopener noreferrer">Consumer Financial Protection Bureau - Financial consumer protection</a></li>
+                        <li><a href="https://www.iii.org/" target="_blank" rel="noopener noreferrer">Insurance Information Institute - Industry insights and education</a></li>
+                        <li><a href="https://www.progressive.com/contact/" target="_blank" rel="noopener noreferrer">Progressive Official Contact Page - Direct company resources</a></li>
+                        <li><a href="https://www.naics.com/" target="_blank" rel="noopener noreferrer">National Association of Insurance Commissioners - Consumer assistance resources</a></li>
+                    </ul>
+                </div>
+                
+                <div class="editorial-review">
+                    <h3>Editorial Review</h3>
+                    <div class="reviewer-info">
+                        <div class="reviewer-avatar">MH</div>
+                        <div>
+                            <h4>Michael Hernandez</h4>
+                            <p>Insurance Billing Specialist<br>15+ years in insurance industry</p>
+                        </div>
+                    </div>
+                    <p>This content has been reviewed and verified by Michael Hernandez, a certified insurance billing specialist with over 15 years of experience helping consumers navigate insurance payment issues. All information is regularly updated to reflect current Progressive billing policies and industry standards.</p>
+                </div>
+                
+                <div class="page-info">
+                    <h3>Page Information</h3>
+                    <div class="info-item">
+                        <i class="fas fa-calendar-alt"></i>
+                        <div>
+                            <h4>Last Updated</h4>
+                            <p>July 25, 2026</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-users"></i>
+                        <div>
+                            <h4>Intended Audience</h4>
+                            <p>Progressive Insurance customers experiencing billing issues, payment difficulties, or account questions who need assistance navigating the company's payment systems and options.</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-shield-alt"></i>
+                        <div>
+                            <h4>Accuracy Commitment</h4>
+                            <p>We regularly verify all information with Progressive representatives to ensure accuracy. If you find information that needs updating, please contact us.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="disclaimer-section">
+        <div class="container">
+            <h3>Important Disclaimer</h3>
+            <p>This website is an independent service not affiliated with Progressive Insurance. We provide assistance and guidance for Progressive billing issues but do not represent Progressive Insurance Company. Progressive is a registered trademark of Progressive Casualty Insurance Company. All other trademarks are the property of their respective owners.</p>
+            <p>The information provided on this website is for general informational purposes only and should not be considered legal or financial advice. Always consult with qualified professionals for advice regarding your specific situation.</p>
+        </div>
+    </section>
+
+    <style>
+        .credibility-section {
+            background-color: white;
+            padding: 3rem 0;
+        }
+        
+        .credibility-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+        
+        .credibility-section h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: var(--secondary-color);
+            position: relative;
+            padding-bottom: 0.5rem;
+        }
+        
+        .credibility-section h3::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 50px;
+            height: 2px;
+            background-color: var(--primary-color);
+        }
+        
+        .links-list {
+            list-style: none;
+            margin-top: 1.5rem;
+        }
+        
+        .links-list li {
+            margin-bottom: 0.8rem;
+            padding-left: 1.5rem;
+            position: relative;
+        }
+        
+        .links-list li::before {
+            content: '•';
+            color: var(--primary-color);
+            position: absolute;
+            left: 0;
+            font-size: 1.2rem;
+            line-height: 1;
+        }
+        
+        .links-list a {
+            color: var(--light-text);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        
+        .links-list a:hover {
+            color: var(--primary-color);
+        }
+        
+        .reviewer-info {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-top: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        .reviewer-avatar {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background-color: var(--primary-color);
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 1.5rem;
+        }
+        
+        .reviewer-info h4 {
+            margin-bottom: 0.2rem;
+            color: var(--secondary-color);
+        }
+        
+        .reviewer-info p {
+            font-size: 0.9rem;
+            color: var(--light-text);
+            margin-bottom: 0;
+        }
+        
+        .info-item {
+            display: flex;
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        .info-item i {
+            color: var(--primary-color);
+            font-size: 1.5rem;
+            margin-top: 0.2rem;
+        }
+        
+        .info-item h4 {
+            margin-bottom: 0.5rem;
+            color: var(--secondary-color);
+        }
+        
+        .info-item p {
+            color: var(--light-text);
+            margin-bottom: 0;
+        }
+        
+        .disclaimer-section {
+            background-color: var(--light-bg);
+            padding: 2rem 0;
+        }
+        
+        .disclaimer-section h3 {
+            font-size: 1.3rem;
+            margin-bottom: 1rem;
+            color: var(--secondary-color);
+        }
+        
+        .disclaimer-section p {
+            color: var(--light-text);
+            margin-bottom: 1rem;
+        }
+        
+        @media screen and (max-width: 768px) {
+            .credibility-content {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+    <style>
+        footer {
+            background-color: var(--secondary-color);
+            color: white;
+            padding: 3rem 0 1.5rem;
+        }
+        
+        .footer-content {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+        
+        .footer-section a {
+            color: rgba(255,255,255,0.8);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        
+        .footer-section a:hover {
+            color: var(--primary-color);
+        }
+        
+        .footer-links li {
+            margin-bottom: 0.5rem;
+        }
+        
+        .social-icons {
+            display: flex;
+            gap: 1rem;
+            margin-top: 1.5rem;
+        }
+        
+        .social-icons a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            background-color: rgba(255,255,255,0.1);
+            border-radius: 50%;
+            transition: all 0.3s ease;
+        }
+        
+        .social-icons a:hover {
+            background-color: var(--primary-color);
+            transform: translateY(-3px);
+        }
+        
+        .social-icons i {
+            font-size: 1.2rem;
+        }
+        
+        @media screen and (max-width: 768px) {
+            footer {
+                padding: 2rem 0 1rem;
+            }
+            
+            .footer-content {
+                flex-direction: column;
+                gap: 2rem;
+            }
+            
+            .footer-section {
+                width: 100%;
+            }
+        }
+    </style>
+    
+    <!-- Schema.org Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Progressive Billing Help",
+      "url": "https://www.payprogressivebill.com",
+      "logo": "https://www.payprogressivebill.com/images/logo.png",
+      "description": "Your trusted resource for resolving Progressive insurance billing issues, payment problems, and account questions.",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "1-888-414-4406",
+        "contactType": "customer service",
+        "areaServed": "US",
+        "availableLanguage": "English"
+      },
+      "sameAs": [
+        "https://www.facebook.com/payprogressivebill",
+        "https://www.twitter.com/payprogressivebill",
+        "https://www.linkedin.com/company/payprogressivebill"
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "US"
+      },
+      "serviceType": "Billing Assistance",
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Progressive Billing Services",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Billing Dispute Resolution",
+              "description": "Help resolve billing disputes with Progressive Insurance"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Payment Assistance",
+              "description": "Assistance with payment options and arrangements for Progressive bills"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Policy Reinstatement",
+              "description": "Help with reinstating canceled Progressive insurance policies"
+            }
+          }
+        ]
+      }
+    }
+    </script>
+    
+    <!-- Additional Structured Data for FAQ -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How can I pay my Progressive bill online for free?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "You can pay your Progressive bill online for free by logging into your account at progressive.com or calling 1-888-414-4406. Once logged in, navigate to the 'Billing' section and select 'Make a Payment.' Progressive doesn't charge a fee for online payments made through their website or mobile app."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What happens if I miss my Progressive payment due date?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "If you miss your payment due date, Progressive typically offers a grace period (varies by state and policy type). During this time, your coverage remains active, but late fees may apply. You'll receive a cancellation notice before your policy is canceled."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I change my Progressive billing due date?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, you can typically change your Progressive billing due date by contacting their customer service. You may need to make an adjustment payment to align with your new preferred date."
+          }
+        }
+      ]
+    }
+    </script>
+</body>
+</html>
+
+
