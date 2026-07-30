@@ -9,616 +9,138 @@
     <link rel="canonical" href="https://utilitybillhelp.github.io/payprogressivebill/" />
     <meta name="theme-color" content="#003a8f" />
     <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
-<meta name="author" content="Utility Billing Guide" />
-<meta name="theme-color" content="#003a8f" />
-<meta name="apple-mobile-web-app-capable" content="yes" />
-<meta name="format-detection" content="telephone=yes" />
-    
-    <link rel="stylesheet" href="
+    <meta name="author" content="Utility Billing Guide" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="format-detection" content="telephone=yes" />
+
+    <!-- Fonts & icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-pbVbG6QZf8q5q9Z2a1Y0bVYjWn1K1k1p7q1QX6q2U6l6Q3r9Nf2k5a1YwZ3Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <style>
         :root {
-            --primary-color: #00a8e0;
-            --secondary-color: #003f5c;
-            --accent-color: #ff6b6b;
-            --light-bg: #f8f9fa;
-            --dark-text: #212529;
-            --light-text: #6c757d;
-            --border-color: #dee2e6;
+            --brand: #003a8f; /* deep blue */
+            --primary-color: #0b66b2; /* editorial blue */
+            --secondary-color: #ffffff; /* white */
+            --muted: #6c757d;
+            --bg: #f5f8fb;
+            --card-bg: #ffffff;
+            --accent: #0077cc;
+            --success: #0f5132;
+            --border: #e6ecf3;
+            --radius: 10px;
+            --max-width: 1100px;
+            --container-padding: 16px;
+            color-scheme: light;
         }
-        
-         {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        
+
+        /* Reset / base */
+        *, *::before, *::after { box-sizing: border-box; }
+        html, body { height: 100%; }
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+            background: var(--bg);
+            color: #111827;
             line-height: 1.6;
-            color: var(--dark-text);
-            background-color: var(--light-bg);
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
         }
-        
-        .container {
-            width: 100%;
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 15px;
-        }
-        
+
+        a { color: var(--primary-color); text-decoration: none; }
+        a:hover { text-decoration: underline; }
+
+        .container { width: 100%; max-width: var(--max-width); margin: 0 auto; padding: 0 var(--container-padding); }
+
         header {
-            background-color: var(--primary-color);
+            background: linear-gradient(90deg, var(--brand), var(--primary-color));
             color: white;
-            padding: 1rem 0;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            padding: 18px 0;
             position: sticky;
             top: 0;
-            z-index: 100;
+            z-index: 50;
+            box-shadow: 0 6px 24px rgba(3, 31, 66, 0.12);
         }
-        
-        .header-content {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
+
+        .header-content { display: flex; align-items: center; justify-content: space-between; gap: 16px; }
+        .logo { font-weight: 700; font-size: 1.25rem; display:flex; align-items:center; gap:10px; }
+        .logo i { font-size:1.45rem; }
+
+        .contact-info { display:flex; gap:16px; align-items:center; }
+        .contact-info a { color: rgba(255,255,255,0.95); font-weight:600 }
+
+        .hero { background: linear-gradient(180deg, rgba(11,102,178,0.95), rgba(0,64,92,0.95)); color: white; padding: 48px 0; text-align:center; }
+        .hero h1 { font-size: clamp(1.6rem, 2.4vw, 2.4rem); margin: 0 0 8px; }
+        .hero p { max-width: 880px; margin: 0 auto 20px; color: rgba(255,255,255,0.9); }
+
+        .cta-buttons { display:flex; justify-content:center; gap:12px; flex-wrap:wrap; margin-top:12px; }
+        .cta-button { display:inline-flex; align-items:center; gap:10px; padding:12px 20px; border-radius:999px; background: #ff6b00; color:white; font-weight:600; border:0; }
+        .cta-button.secondary { background: transparent; border:2px solid rgba(255,255,255,0.18); }
+        .cta-button:hover { transform: translateY(-3px); box-shadow: 0 10px 24px rgba(3,31,66,0.12); }
+
+        section { padding: 40px 0; }
+
+        .features h2, .billing-process h2, .billing-options h2, .problem-solutions h2, .testimonial-section h2, .faq-section h2 { text-align:center; color: var(--brand); margin-bottom:24px; }
+
+        .features-grid { display:grid; grid-template-columns: repeat(auto-fit,minmax(260px,1fr)); gap:18px; }
+        .feature-card { background: var(--card-bg); padding:20px; border-radius: var(--radius); border:1px solid var(--border); box-shadow: 0 8px 20px rgba(6,18,44,0.04); text-align:left; }
+        .feature-icon { font-size:1.6rem; color:var(--primary-color); margin-bottom:10px; }
+        .feature-card h3 { margin:0 0 8px; color: #073763; }
+        .feature-card p { margin:0; color:var(--muted); }
+
+        /* Timeline */
+        .process-timeline { max-width:900px; margin:0 auto; position:relative; }
+        .timeline-item { padding:16px 20px; width:100%; margin-bottom:18px; }
+        .timeline-content { background:var(--card-bg); padding:18px; border-radius:8px; border:1px solid var(--border); }
+
+        .options-table { width:100%; max-width:900px; margin:0 auto; border-collapse:collapse; border-radius:8px; overflow:hidden; box-shadow: 0 8px 20px rgba(6,18,44,0.04); }
+        .options-table th, .options-table td { padding:12px 14px; border-bottom:1px solid var(--border); text-align:left; }
+        .options-table th { background: var(--brand); color:white; }
+
+        .highlight { background:#fff8e1; padding:2px 6px; border-radius:4px; }
+
+        .solutions-grid { display:grid; grid-template-columns: repeat(auto-fit,minmax(240px,1fr)); gap:18px; }
+        .solution-card { background:var(--card-bg); padding:18px; border-radius:10px; border:1px solid var(--border); }
+        .solution-card h3 { margin:0 0 8px; color:var(--primary-color); display:flex; gap:8px; align-items:center }
+        .solution-card p, .solution-card li { color:var(--muted) }
+
+        .testimonials-container { display:grid; grid-template-columns: repeat(auto-fit,minmax(260px,1fr)); gap:18px; }
+        .testimonial-card { background: linear-gradient(180deg, rgba(255,255,255,0.9), rgba(245,248,251,0.9)); padding:18px; border-radius:10px; border:1px solid var(--border); }
+        .testimonial-card::before { content: '“'; font-size:40px; color:var(--primary-color); position:absolute; opacity:0.08; left:20px; top:6px; }
+        .testimonial-content { font-style:italic; color:var(--muted); margin-bottom:14px; }
+        .author-avatar { width:48px; height:48px; border-radius:50%; background:var(--primary-color); color:white; display:inline-flex; align-items:center; justify-content:center; font-weight:700 }
+
+        /* FAQ */
+        .faq-container { max-width:880px; margin:0 auto; }
+        .faq-item { border:1px solid var(--border); border-radius:8px; overflow:hidden; margin-bottom:12px; background:var(--card-bg); }
+        .faq-question { padding:14px 16px; display:flex; justify-content:space-between; align-items:center; cursor:pointer; background:linear-gradient(180deg,#fff,#fbfdff); }
+        .faq-question strong { font-weight:600 }
+        .faq-answer { padding:0 16px; max-height:0; overflow:hidden; transition: all .28s ease; }
+        .faq-item.active .faq-answer { padding:12px 16px 18px; max-height:600px; }
+
+        .contact-cta .cta-content { max-width:980px; margin:0 auto; text-align:center }
+        .contact-options { display:grid; grid-template-columns: repeat(auto-fit,minmax(220px,1fr)); gap:12px; margin-top:18px }
+        .contact-option { background:var(--card-bg); padding:16px; border-radius:8px; border:1px solid var(--border); text-align:left }
+
+        footer { background:var(--brand); color:white; padding:24px 0; }
+        footer .footer-content { display:flex; gap:20px; flex-direction:column; align-items:center }
+
+        /* Responsive tweaks */
+        @media (min-width:900px) {
+            .header-content { padding:0; }
         }
-        
-        .logo {
-            font-size: 1.8rem;
-            font-weight: bold;
-        }
-        
-        .contact-info {
-            display: flex;
-            gap: 1.5rem;
-        }
-        
-        .contact-info a {
-            color: white;
-            text-decoration: none;
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
-            font-weight: 500;
-            transition: all 0.3s ease;
-        }
-        
-        .contact-info a:hover {
-            transform: translateY(-2px);
-        }
-        
-        .hero {
-            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
-            color: white;
-            padding: 3rem 0;
-            text-align: center;
-        }
-        
-        .hero h1 {
-            font-size: 2.5rem;
-            margin-bottom: 1rem;
-        }
-        
-        .hero p {
-            font-size: 1.2rem;
-            max-width: 800px;
-            margin: 0 auto 2rem;
-        }
-        
-        .cta-buttons {
-            display: flex;
-            justify-content: center;
-            gap: 1rem;
-            flex-wrap: wrap;
-        }
-        
-        .cta-button {
-            background-color: var(--accent-color);
-            color: white;
-            border: none;
-            padding: 1rem 2rem;
-            font-size: 1.1rem;
-            border-radius: 50px;
-            cursor: pointer;
-            transition: all 0.3s ease;
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
-            text-decoration: none;
-            font-weight: 600;
-        }
-        
-        .cta-button:hover {
-            background-color: #ff5252;
-            transform: translateY(-3px);
-            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
-        }
-        
-        .cta-button.secondary {
-            background-color: transparent;
-            border: 2px solid white;
-        }
-        
-        .cta-button.secondary:hover {
-            background-color: rgba(255,255,255,0.2);
-        }
-        
-        .features {
-            padding: 4rem 0;
-        }
-        
-        .features h2 {
-            text-align: center;
-            font-size: 2rem;
-            margin-bottom: 3rem;
-            color: var(--secondary-color);
-        }
-        
-        .features-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
-        }
-        
-        .feature-card {
-            background-color: white;
-            border-radius: 10px;
-            padding: 2rem;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
-            transition: all 0.3s ease;
-            text-align: center;
-        }
-        
-        .feature-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
-        }
-        
-        .feature-icon {
-            font-size: 3rem;
-            color: var(--primary-color);
-            margin-bottom: 1rem;
-        }
-        
-        .feature-card h3 {
-            font-size: 1.3rem;
-            margin-bottom: 1rem;
-            color: var(--secondary-color);
-        }
-        
-        .feature-card p {
-            color: var(--light-text);
-        }
-        
-        .billing-process {
-            background-color: white;
-            padding: 4rem 0;
-        }
-        
-        .billing-process h2 {
-            text-align: center;
-            font-size: 2rem;
-            margin-bottom: 3rem;
-            color: var(--secondary-color);
-        }
-        
-        .process-timeline {
-            position: relative;
-            max-width: 900px;
-            margin: 0 auto;
-        }
-        
-        .process-timeline::after {
-            content: '';
-            position: absolute;
-            width: 6px;
-            background-color: var(--primary-color);
-            top: 0;
-            bottom: 0;
-            left: 50%;
-            margin-left: -3px;
-        }
-        
-        .timeline-item {
-            padding: 10px 40px;
-            position: relative;
-            background-color: inherit;
-            width: 50%;
-        }
-        
-        .timeline-item::after {
-            content: '';
-            position: absolute;
-            width: 25px;
-            height: 25px;
-            right: -12px;
-            background-color: white;
-            border: 4px solid var(--primary-color);
-            top: 25px;
-            border-radius: 50%;
-            z-index: 1;
-        }
-        
-        .left {
-            left: 0;
-        }
-        
-        .right {
-            left: 50%;
-        }
-        
-        .left::before {
-            content: " ";
-            height: 0;
-            position: absolute;
-            top: 32px;
-            width: 0;
-            z-index: 1;
-            right: 30px;
-            border: medium solid white;
-            border-width: 10px 0 10px 10px;
-            border-color: transparent transparent transparent white;
-        }
-        
-        .right::before {
-            content: " ";
-            height: 0;
-            position: absolute;
-            top: 32px;
-            width: 0;
-            z-index: 1;
-            left: 30px;
-            border: medium solid white;
-            border-width: 10px 10px 10px 0;
-            border-color: transparent white transparent transparent;
-        }
-        
-        .right::after {
-            left: -12px;
-        }
-        
-        .timeline-content {
-            padding: 20px 30px;
-            background-color: white;
-            position: relative;
-            border-radius: 6px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.05);
-        }
-        
-        .timeline-content h3 {
-            margin-bottom: 10px;
-            color: var(--secondary-color);
-        }
-        
-        @media screen and (max-width: 768px) {
-            .process-timeline::after {
-                left: 31px;
-            }
-            
-            .timeline-item {
-                width: 100%;
-                padding-left: 70px;
-                padding-right: 25px;
-            }
-            
-            .timeline-item::before {
-                left: 60px;
-                border: medium solid white;
-                border-width: 10px 10px 10px 0;
-                border-color: transparent white transparent transparent;
-            }
-            
-            .left::after, .right::after {
-                left: 21px;
-            }
-            
-            .right {
-                left: 0%;
-            }
-            
-            .hero h1 {
-                font-size: 2rem;
-            }
-            
-            .contact-info {
-                flex-direction: column;
-                gap: 0.5rem;
-            }
-        }
-        
-        footer {
-            background-color: var(--secondary-color);
-            color: white;
-            padding: 2rem 0;
-            text-align: center;
-        }
-        
-        .footer-content {
-        display: flex;
-        flex-direction: column;
-        gap: 1.5rem;
-    }
-    
-    .footer-links {
-        display: flex;
-        justify-content: center;
-        gap: 2rem;
-        flex-wrap: wrap;
-    }
-    
-    .footer-links a {
-        color: white;
-        text-decoration: none;
-        transition: all 0.3s ease;
-    }
-    
-    .footer-links a:hover {
-        color: var(--primary-color);
-    }
-    
-    .social-icons {
-        display: flex;
-        justify-content: center;
-        gap: 1rem;
-    }
-    
-    .social-icons a {
-        color: white;
-        font-size: 1.5rem;
-        transition: all 0.3s ease;
-    }
-    
-    .social-icons a:hover {
-        color: var(--primary-color);
-        transform: translateY(-3px);
-    }
-    
-    .copyright {
-        margin-top: 1.5rem;
-        font-size: 0.9rem;
-        opacity: 0.7;
-    }
-    
-    .faq-section {
-        background-color: white;
-        padding: 4rem 0;
-    }
-    
-    .faq-section h2 {
-        text-align: center;
-        font-size: 2rem;
-        margin-bottom: 3rem;
-        color: var(--secondary-color);
-    }
-    
-    .faq-container {
-        max-width: 800px;
-        margin: 0 auto;
-    }
-    
-    .faq-item {
-        margin-bottom: 1.5rem;
-        border: 1px solid var(--border-color);
-        border-radius: 8px;
-        overflow: hidden;
-    }
-    
-    .faq-question {
-        background-color: var(--light-bg);
-        padding: 1.5rem;
-        font-weight: 600;
-        cursor: pointer;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        transition: all 0.3s ease;
-    }
-    
-    .faq-question:hover {
-        background-color: #e9ecef;
-    }
-    
-    .faq-question i {
-        transition: all 0.3s ease;
-    }
-    
-    .faq-answer {
-        padding: 0 1.5rem;
-        max-height: 0;
-        overflow: hidden;
-        transition: all 0.3s ease;
-    }
-    
-    .faq-item.active .faq-answer {
-        padding: 1.5rem;
-        max-height: 500px;
-    }
-    
-    .faq-item.active .faq-question i {
-        transform: rotate(180deg);
-    }
-    
-    .billing-options {
-        padding: 4rem 0;
-        background-color: white;
-    }
-    
-    .billing-options h2 {
-        text-align: center;
-        font-size: 2rem;
-        margin-bottom: 3rem;
-        color: var(--secondary-color);
-    }
-    
-    .options-table {
-        width: 100%;
-        border-collapse: collapse;
-        margin: 0 auto;
-        max-width: 900px;
-        box-shadow: 0 5px 15px rgba(0,0,0,0.05);
-        border-radius: 8px;
-        overflow: hidden;
-    }
-    
-    .options-table th, .options-table td {
-        padding: 1rem;
-        text-align: left;
-        border-bottom: 1px solid var(--border-color);
-    }
-    
-    .options-table th {
-        background-color: var(--primary-color);
-        color: white;
-    }
-    
-    .options-table tr:last-child td {
-        border-bottom: none;
-    }
-    
-    .options-table tr:hover {
-        background-color: var(--light-bg);
-    }
-    
-    .highlight {
-        background-color: #fff8e1;
-        padding: 0.2rem 0.5rem;
-        border-radius: 4px;
-    }
-    
-    .problem-solutions {
-        padding: 4rem 0;
-    }
-    
-    .problem-solutions h2 {
-        text-align: center;
-        font-size: 2rem;
-        margin-bottom: 3rem;
-        color: var(--secondary-color);
-    }
-    
-    .solutions-grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-        gap: 2rem;
-    }
-    
-    .solution-card {
-        background-color: white;
-        border-radius: 10px;
-        padding: 2rem;
-        box-shadow: 0 5px 15px rgba(0,0,0,0.05);
-        transition: all 0.3s ease;
-    }
-    
-    .solution-card:hover {
-        transform: translateY(-5px);
-        box-shadow: 0 10px 25px rgba(0,0,0,0.1);
-    }
-    
-    .solution-card h3 {
-        color: var(--primary-color);
-        margin-bottom: 1rem;
-        display: flex;
-        align-items: center;
-        gap: 0.5rem;
-    }
-    
-    .solution-card p {
-        color: var(--light-text);
-        margin-bottom: 1rem;
-    }
-    
-    .solution-card ul {
-        padding-left: 1.5rem;
-        color: var(--light-text);
-    }
-    
-    .solution-card li {
-        margin-bottom: 0.5rem;
-    }
-    
-    .testimonial-section {
-        background-color: white;
-        padding: 4rem 0;
-    }
-    
-    .testimonial-section h2 {
-        text-align: center;
-        font-size: 2rem;
-        margin-bottom: 3rem;
-        color: var(--secondary-color);
-    }
-    
-    .testimonials-container {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-        gap: 2rem;
-    }
-    
-    .testimonial-card {
-        background-color: var(--light-bg);
-        border-radius: 10px;
-        padding: 2rem;
-        box-shadow: 0 5px 15px rgba(0,0,0,0.05);
-        position: relative;
-    }
-    
-    .testimonial-card::before {
-        content: """;
-        font-size: 4rem;
-        color: var(--primary-color);
-        position: absolute;
-        top: -10px;
-        left: 20px;
-        opacity: 0.2;
-    }
-    
-    .testimonial-content {
-        margin-bottom: 1.5rem;
-        font-style: italic;
-        position: relative;
-        z-index: 1;
-    }
-    
-    .testimonial-author {
-        display: flex;
-        align-items: center;
-        gap: 1rem;
-    }
-    
-    .author-avatar {
-        width: 50px;
-        height: 50px;
-        border-radius: 50%;
-        background-color: var(--primary-color);
-        color: white;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-weight: bold;
-    }
-    
-    .author-info h4 {
-        margin-bottom: 0.2rem;
-        color: var(--secondary-color);
-    }
-    
-    .author-info p {
-        font-size: 0.9rem;
-        color: var(--light-text);
-    }
-</style>
+
+    </style>
 </head>
 <body>
     <header>
-        <div class="container">
-            <div class="header-content">
-                <div class="logo">
-                    <i class="fas fa-shield-alt"></i> Progressive Billing Help
-                </div>
-                <div class="contact-info">
-                    <a href="tel:1-888-414-4406"><i class="fas fa-phone"></i> 1-800-555-1234</a>
-                    <a href="mailto:help@payprogressivebill.com"><i class="fas fa-envelope"></i> Email Us</a>
-                </div>
+        <div class="container header-content">
+            <div class="logo"><i class="fas fa-shield-alt"></i> <span>Progressive Billing Help</span></div>
+            <div class="contact-info">
+                <a href="tel:1-888-414-4406"><i class="fas fa-phone"></i> 1-888-414-4406</a>
+                <a href="mailto:help@payprogressivebill.com"><i class="fas fa-envelope"></i> Email Us</a>
             </div>
         </div>
     </header>
@@ -647,8 +169,8 @@
                     <div class="feature-icon"><i class="fas fa-dollar-sign"></i></div>
                     <h3>Payment Solutions</h3>
                     <p>Find the right payment option for your situation, including payment plans, extensions, and alternative payment methods.</p>
-                </
-<div class="feature-card">
+                </div>
+                <div class="feature-card">
                     <div class="feature-icon"><i class="fas fa-file-invoice"></i></div>
                     <h3>Billing Dispute Help</h3>
                     <p>Resolve incorrect charges, billing errors, and disputes with Progressive's billing department through our expert guidance.</p>
@@ -676,50 +198,50 @@
         <div class="container">
             <h2>Understanding Your Progressive Billing Cycle</h2>
             <div class="process-timeline">
-                <div class="timeline-item left">
+                <div class="timeline-item">
                     <div class="timeline-content">
                         <h3>1. Billing Statement</h3>
-                        <p>Progressive sends your billing statement approximately 30 days before your due date. This includes your premium amount, due date, and available payment options. You can also access your bill online through your Progressive account.</p>
+                        <p>Progressive sends your billing statement approximately 30 days before your due date. This includes your premium amount, due date, and available payment options.</p>
                     </div>
                 </div>
-                <div class="timeline-item right">
+                <div class="timeline-item">
                     <div class="timeline-content">
                         <h3>2. Payment Window</h3>
-                        <p>You have until the due date to make your payment. Progressive offers multiple payment methods including online bill pay, phone payments, automatic deductions, and mail-in options. Many customers search for "progressive pay my bill online free" to find convenient payment solutions.</p>
+                        <p>You have until the due date to make your payment. Progressive offers multiple payment methods including online bill pay, phone payments, automatic deductions, and mail.</p>
                     </div>
                 </div>
-                <div class="timeline-item left">
+                <div class="timeline-item">
                     <div class="timeline-content">
                         <h3>3. Grace Period</h3>
-                        <p>Progressive typically offers a grace period after your due date (varies by state and policy type). During this time, your coverage remains active, but late fees may apply. It's important to understand your specific grace period to avoid policy cancellation.</p>
+                        <p>Progressive typically offers a grace period after your due date (varies by state and policy type). During this time, your coverage remains active, but late fees may apply.</p>
                     </div>
                 </div>
-                <div class="timeline-item right">
+                <div class="timeline-item">
                     <div class="timeline-content">
                         <h3>4. Cancellation Notice</h3>
-                        <p>If payment isn't received by the end of the grace period, Progressive will send a cancellation notice. This provides a final opportunity to make a payment and maintain coverage. The notice will specify the exact date and time your policy will cancel if payment isn't received.</p>
+                        <p>If payment isn't received by the end of the grace period, Progressive will send a cancellation notice. This provides a final opportunity to make a payment and maintain your policy.</p>
                     </div>
                 </div>
-                <div class="timeline-item left">
+                <div class="timeline-item">
                     <div class="timeline-content">
                         <h3>5. Policy Cancellation</h3>
-                        <p>If payment isn't made by the specified date and time, your policy will cancel. This results in a lapse of coverage and potential consequences. We can help you understand your options at this stage, including potential reinstatement.</p>
+                        <p>If payment isn't made by the specified date and time, your policy will cancel. This results in a lapse of coverage and potential consequences. We can help you understand options to reinstate.</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="billing-options">
+    <section class="billing-options" id="billing-options">
         <div class="container">
             <h2>Progressive Payment Options</h2>
-            <table class="options-table">
+            <table class="options-table" role="table" aria-label="Payment options table">
                 <thead>
                     <tr>
-                        <th>Payment Method</th>
-                        <th>Processing Time</th>
-                        <th>Fees</th>
-                        <th>How to Access</th>
+                        <th scope="col">Payment Method</th>
+                        <th scope="col">Processing Time</th>
+                        <th scope="col">Fees</th>
+                        <th scope="col">How to Access</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -767,15 +289,13 @@
                     </tr>
                 </tbody>
             </table>
-            <p style="text-align: center; margin-top: 2rem; color: var(--light-text);">
-                Need help with <span class="highlight">progressive bill pay free</span> options? Call our specialists for guidance on the best payment method for your situation.
-            </p>
+            <p style="text-align:center; margin-top:18px; color:var(--muted);">Need help with <span class="highlight">progressive bill pay free</span> options? Call our specialists for guidance on the best payment method for your situation.</p>
         </div>
     </section>
 
     <section class="problem-solutions">
         <div class="container">
-            <h2>Common Progressive Billing Issues & Solutions</h2>
+            <h2>Common Progressive Billing Issues &amp; Solutions</h2>
             <div class="solutions-grid">
                 <div class="solution-card">
                     <h3><i class="fas fa-exclamation-circle"></i> Late Payment Issues</h3>
@@ -853,39 +373,24 @@
             <h2>What Our Customers Say</h2>
             <div class="testimonials-container">
                 <div class="testimonial-card">
-                    <div class="testimonial-content">
-                        "I was facing cancellation of my auto policy due to a payment processing error. The team helped me resolve the issue with Progressive and get my policy reinstated. Their knowledge of Progressive's systems saved me from losing coverage."
-                    </div>
+                    <div class="testimonial-content">"I was facing cancellation of my auto policy due to a payment processing error. The team helped me resolve the issue with Progressive and get my policy reinstated."</div>
                     <div class="testimonial-author">
                         <div class="author-avatar">JD</div>
-                        <div class="author-info">
-                            <h4>James D.</h4>
-                            <p>Progressive Customer since 2018</p>
-                        </div>
+                        <div class="author-info"><h4>James D.</h4><p>Progressive Customer since 2018</p></div>
                     </div>
                 </div>
                 <div class="testimonial-card">
-                    <div class="testimonial-content">
-                        "My premium suddenly increased by 30% without explanation. The billing specialists helped me understand the reasons and worked with Progressive to find discounts I was eligible for. They saved me over $400 annually."
-                    </div>
+                    <div class="testimonial-content">"My premium suddenly increased by 30% without explanation. The billing specialists helped me understand the reasons and worked with Progressive to find discounts I was eligible for."</div>
                     <div class="testimonial-author">
                         <div class="author-avatar">SM</div>
-                        <div class="author-info">
-                            <h4>Sarah M.</h4>
-                            <p>Progressive Customer since 2015</p>
-                        </div>
+                        <div class="author-info"><h4>Sarah M.</h4><p>Progressive Customer since 2015</p></div>
                     </div>
                 </div>
                 <div class="testimonial-card">
-                    <div class="testimonial-content">
-                        "I was struggling to make payments during a difficult financial period. The team helped me set up a payment plan with Progressive that worked with my budget. They were understanding, professional, and found a solution that kept my coverage active."
-                    </div>
+                    <div class="testimonial-content">"I was struggling to make payments during a difficult financial period. The team helped me set up a payment plan with Progressive that worked with my budget."</div>
                     <div class="testimonial-author">
                         <div class="author-avatar">RJ</div>
-                        <div class="author-info">
-                            <h4>Robert J.</h4>
-                            <p>Progressive Customer since 2020</p>
-                        </div>
+                        <div class="author-info"><h4>Robert J.</h4><p>Progressive Customer since 2020</p></div>
                     </div>
                 </div>
             </div>
@@ -897,50 +402,36 @@
             <h2>Frequently Asked Questions</h2>
             <div class="faq-container">
                 <div class="faq-item">
-                    <div class="faq-question">How can I pay my Progressive bill online for free?<i class="fas fa-chevron-down"></i></div>
-                    <div class="faq-answer">
-                        <p>You can pay your Progressive bill online for free by logging into your account at progressive.com. Once logged in, navigate to the "Billing" section and select "Make a Payment." Progressive doesn't charge a fee for online payments made through their website or mobile app. This is the most convenient way to manage your "progressive pay my bill online free" needs.</p>
-                    </div>
+                    <div class="faq-question"><strong>How can I pay my Progressive bill online for free?</strong> <i class="fas fa-chevron-down"></i></div>
+                    <div class="faq-answer"><p>You can pay your Progressive bill online for free by logging into your account at progressive.com. Once logged in, navigate to the "Billing" section and select "Make a Payment." Follow the prompts to complete your payment.</p></div>
                 </div>
                 <div class="faq-item">
-                    <div class="faq-question">What happens if I miss my Progressive payment due date?<i class="fas fa-chevron-down"></i></div>
-                    <div class="faq-answer">
-                        <p>If you miss your payment due date, Progressive typically offers a grace period (varies by state and policy type). During this time, your coverage remains active, but late fees may apply. You'll receive a cancellation notice before your policy is canceled. It's important to make a payment as soon as possible to avoid policy cancellation and potential rate increases upon reinstatement.</p>
-                    </div>
+                    <div class="faq-question"><strong>What happens if I miss my Progressive payment due date?</strong> <i class="fas fa-chevron-down"></i></div>
+                    <div class="faq-answer"><p>If you miss your payment due date, Progressive typically offers a grace period (varies by state and policy type). During this time, your coverage remains active, but late fees may apply.</p></div>
                 </div>
                 <div class="faq-item">
-                    <div class="faq-question">Can I change my Progressive billing due date?<i class="fas fa-chevron-down"></i></div>
-                    <div class="faq-answer">
-                        <p>Yes, you can typically change your Progressive billing due date by contacting their customer service. You may need to make an adjustment payment to align with your new preferred date. Some policy types may have restrictions on when billing dates can be changed. Call us if you need assistance with this process.</p>
-                    </div>
+                    <div class="faq-question"><strong>Can I change my Progressive billing due date?</strong> <i class="fas fa-chevron-down"></i></div>
+                    <div class="faq-answer"><p>Yes, you can typically change your Progressive billing due date by contacting their customer service. You may need to make an adjustment payment to align with your new date.</p></div>
                 </div>
                 <div class="faq-item">
-                    <div class="faq-question">What payment methods does Progressive accept?<i class="fas fa-chevron-down"></i></div>
-                    <div class="faq-answer">
-                        <p>Progressive accepts several payment methods including: checking/savings account (ACH), debit cards, credit cards (Visa, Mastercard, American Express, Discover), PayPal, and Apple Pay. You can also pay by phone, mail, or in person at a Progressive service center. Each method has different processing times, and some may have convenience fees.</p>
-                    </div>
+                    <div class="faq-question"><strong>What payment methods does Progressive accept?</strong> <i class="fas fa-chevron-down"></i></div>
+                    <div class="faq-answer"><p>Progressive accepts several payment methods including: checking/savings account (ACH), debit cards, credit cards (Visa, Mastercard, American Express, Discover), PayPal, and other supported methods.</p></div>
                 </div>
                 <div class="faq-item">
-                    <div class="faq-question">How do I dispute a charge on my Progressive bill?<i class="fas fa-chevron-down"></i></div>
-                    <div class="faq-answer">
-                        <p>To dispute a charge on your Progressive bill, first gather documentation supporting your claim. Then contact Progressive's billing department directly or work with us to advocate on your behalf. Explain the specific charge you're disputing and why. Progressive will investigate the dispute and typically provide a response within 10-14 business days. Keep records of all communications regarding the dispute.</p>
-                    </div>
+                    <div class="faq-question"><strong>How do I dispute a charge on my Progressive bill?</strong> <i class="fas fa-chevron-down"></i></div>
+                    <div class="faq-answer"><p>To dispute a charge on your Progressive bill, first gather documentation supporting your claim. Then contact Progressive's billing department directly or work with us to submit the details for review.</p></div>
                 </div>
                 <div class="faq-item">
-                    <div class="faq-question">Does Progressive offer payment plans for financial hardship?<i class="fas fa-chevron-down"></i></div>
-                    <div class="faq-answer">
-                        <p>Progressive may offer payment arrangements or extensions for customers experiencing financial hardship. Options vary by situation and policy type. Contact Progressive directly to discuss your specific circumstances, or let us help you negotiate a payment plan that works with your budget. Be prepared to explain your situation and provide documentation if requested.</p>
-                    </div>
+                    <div class="faq-question"><strong>Does Progressive offer payment plans for financial hardship?</strong> <i class="fas fa-chevron-down"></i></div>
+                    <div class="faq-answer"><p>Progressive may offer payment arrangements or extensions for customers experiencing financial hardship. Options vary by situation and policy type. Contact Progressive directly to discuss options.</p></div>
                 </div>
                 <div class="faq-item">
-                    <div class="faq-question">Can I get a refund if I overpay my Progressive premium?<i class="fas fa-chevron-down"></i></div>
-                    <div class="faq-answer">
-                        <p>Yes, if you overpay your Progressive premium, you're entitled to a refund. The process typically takes 7-10 business days after the overpayment is confirmed. You can request the refund be sent as a check or deposited directly to your bank account. Alternatively, you can apply the overpayment as a credit toward your next premium.</p>
-                    </div>
+                    <div class="faq-question"><strong>Can I get a refund if I overpay my Progressive premium?</strong> <i class="fas fa-chevron-down"></i></div>
+                    <div class="faq-answer"><p>Yes, if you overpay your Progressive premium, you're entitled to a refund. The process typically takes 7-10 business days after the overpayment is confirmed. You can request the refund through your Progressive account or by contacting customer service.</p></div>
                 </div>
             </div>
         </div>
-    </section>      
+    </section>
 
     <section class="contact-cta">
         <div class="container">
@@ -948,7 +439,7 @@
                 <h2>Need Immediate Help With Your Progressive Bill?</h2>
                 <p>Our billing specialists are ready to help you resolve any issues with your Progressive insurance bill. Don't wait until your policy cancels - get the assistance you need today.</p>
                 <div class="cta-buttons">
-                    <a href="tel:1-888-414-4406" class="cta-button"><i class="fas fa-phone"></i> Call Now: 1-800-555-1234</a>
+                    <a href="tel:1-888-414-4406" class="cta-button"><i class="fas fa-phone"></i> Call Now: 1-888-414-4406</a>
                     <a href="#contact-form" class="cta-button secondary"><i class="fas fa-envelope"></i> Email Us</a>
                 </div>
                 <div class="contact-options">
@@ -968,7 +459,7 @@
                     <div class="contact-option">
                         <i class="fas fa-check-circle"></i>
                         <h3>Services We Provide</h3>
-                        <p>Billing dispute resolution</
+                        <p>Billing dispute resolution</p>
                         <p>Payment plan arrangements</p>
                         <p>Policy reinstatement assistance</p>
                         <p>Grace period extensions</p>
@@ -982,996 +473,50 @@
         <div class="container">
             <h2>Send Us a Message</h2>
             <div class="contact-form-wrapper">
-                <form class="contact-form">
+                <form class="contact-form" action="#" method="post">
                     <div class="form-group">
                         <label for="name">Full Name</label>
-                        <input type="text" id="name" name="name" required>
+                        <input type="text" id="name" name="name" required style="width:100%; padding:10px; margin-top:8px; border:1px solid var(--border); border-radius:6px;">
                     </div>
-                    <div class="form-group">
+                    <div class="form-group" style="margin-top:12px;">
                         <label for="phone">Phone Number</label>
-                        <input type="tel" id="phone" name="phone" required>
+                        <input type="tel" id="phone" name="phone" required style="width:100%; padding:10px; margin-top:8px; border:1px solid var(--border); border-radius:6px;">
                     </div>
-                    <div class="form-group">
+                    <div class="form-group" style="margin-top:12px;">
                         <label for="email">Email Address</label>
-                        <input type="email" id="email" name="email" required>
+                        <input type="email" id="email" name="email" required style="width:100%; padding:10px; margin-top:8px; border:1px solid var(--border); border-radius:6px;">
                     </div>
-                    <div class="form-group">
+                    <div class="form-group" style="margin-top:12px;">
                         <label for="policy">Policy Number (Optional)</label>
-                        <input type="text" id="policy" name="policy">
+                        <input type="text" id="policy" name="policy" style="width:100%; padding:10px; margin-top:8px; border:1px solid var(--border); border-radius:6px;">
                     </div>
-                    <div class="form-group">
-                        <label for="issue">Issue Type</label>
-                        <select id="issue" name="issue" required>
-                            <option value="">Please select an issue type</option>
-                            <option value="late-payment">Late Payment</option>
-                            <option value="billing-dispute">Billing Dispute</option>
-                            <option value="cancellation">Policy Cancellation</option>
-                            <option value="payment-method">Payment Method Issue</option>
-                            <option value="rate-increase">Unexpected Rate Increase</option>
-                            <option value="other">Other</option>
-                        </select>
+                    <div style="margin-top:14px; text-align:right;">
+                        <button type="submit" class="cta-button">Send Message</button>
                     </div>
-                    <div class="form-group">
-                        <label for="message">Describe Your Issue</label>
-                        <textarea id="message" name="message" rows="5" required></textarea>
-                    </div>
-                    <div class="form-group checkbox-group">
-                        <input type="checkbox" id="consent" name="consent" required>
-                        <label for="consent">I consent to being contacted about my inquiry and agree to the terms of service and privacy policy.</label>
-                    </div>
-                    <button type="submit" class="submit-button">Send Message</button>
                 </form>
-                <div class="contact-info-sidebar">
-                    <div class="sidebar-item">
-                        <i class="fas fa-phone"></i>
-                        <div>
-                            <h3>Direct Line</h3>
-                            <p>1-888-414-4406</p>
-                        </div>
-                    </div>
-                    <div class="sidebar-item">
-                        <i class="fas fa-envelope"></i>
-                        <div>
-                            <h3>Email Us</h3>
-                            <p>help@payprogressivebill.com</p>
-                        </div>
-                    </div>
-                    <div class="sidebar-item">
-                        <i class="fas fa-clock"></i>
-                        <div>
-                            <h3>Response Time</h3>
-                            <p>We typically respond within 24 hours</p>
-                        </div>
-                    </div>
-                </div>
             </div>
         </div>
     </section>
-
-    <section class="resources-section">
-        <div class="container">
-            <h2>Additional Resources</h2>
-            <div class="resources-grid">
-                <div class="resource-card">
-                    <i class="fas fa-book"></i>
-                    <h3>Progressive Billing Guide</h3>
-                    <p>Download our comprehensive guide to understanding and managing your Progressive insurance bill.</p>
-                    <a href="#" class="resource-link">Download PDF</a>
-                </div>
-                <div class="resource-card">
-                    <i class="fas fa-calculator"></i>
-                    <h3>Payment Calculator</h3>
-                    <p>Calculate different payment options and see how they fit your budget with our interactive tool.</p>
-                    <a href="#" class="resource-link">Use Calculator</a>
-                </div>
-                <div class="resource-card">
-                    <i class="fas fa-shield-alt"></i>
-                    <h3>Insurance Coverage Guide</h3>
-                    <p>Understand your Progressive coverage options and how they affect your premium.</p>
-                    <a href="#" class="resource-link">View Guide</a>
-                </div>
-                <div class="resource-card">
-                    <i class="fas fa-file-invoice-dollar"></i>
-                    <h3>Discount Checklist</h3>
-                    <p>Make sure you're getting all available discounts with our comprehensive checklist.</p>
-                    <a href="#" class="resource-link">Get Checklist</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <style>
-        .contact-cta {
-            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
-            color: white;
-            padding: 4rem 0;
-            text-align: center;
-        }
-        
-        .cta-content h2 {
-            font-size: 2.2rem;
-            margin-bottom: 1.5rem;
-        }
-        
-        .cta-content p {
-            font-size: 1.1rem;
-            max-width: 800px;
-            margin: 0 auto 2.5rem;
-        }
-        
-        .contact-options {
-            display: flex;
-            justify-content: center;
-            gap: 2rem;
-            margin-top: 3rem;
-            flex-wrap: wrap;
-        }
-        
-        .contact-option {
-            background-color: rgba(255,255,255,0.1);
-            border-radius: 10px;
-            padding: 1.5rem;
-            max-width: 250px;
-            text-align: center;
-        }
-        
-        .contact-option i {
-            font-size: 2.5rem;
-            margin-bottom: 1rem;
-            color: rgba(255,255,255,0.8);
-        }
-        
-        .contact-option h3 {
-            margin-bottom: 0.5rem;
-        }
-        
-        .contact-option p {
-            margin-bottom: 0.3rem;
-            font-size: 0.95rem;
-        }
-        
-        .contact-form-section {
-            background-color: white;
-            padding: 4rem 0;
-        }
-        
-        .contact-form-section h2 {
-            text-align: center;
-            font-size: 2rem;
-            margin-bottom: 2.5rem;
-            color: var(--secondary-color);
-        }
-        
-        .contact-form-wrapper {
-            display: grid;
-            grid-template-columns: 2fr 1fr;
-            gap: 3rem;
-            max-width: 900px;
-            margin: 0 auto;
-        }
-        
-        .contact-form {
-            display: flex;
-            flex-direction: column;
-            gap: 1.5rem;
-        }
-        
-        .form-group {
-            display: flex;
-            flex-direction: column;
-        }
-        
-        .form-group label {
-            margin-bottom: 0.5rem;
-            font-weight: 600;
-            color: var(--secondary-color);
-        }
-        
-        .form-group input,
-        .form-group select,
-        .form-group textarea {
-            padding: 0.8rem;
-            border: 1px solid var(--border-color);
-            border-radius: 5px;
-            font-family: inherit;
-        }
-        
-        .checkbox-group {
-            flex-direction: row;
-            align-items: flex-start;
-            gap: 0.5rem;
-        }
-        
-        .checkbox-group input {
-            margin-top: 0.2rem;
-        }
-        
-        .submit-button {
-            background-color: var(--primary-color);
-            color: white;
-            border: none;
-            padding: 1rem;
-            font-size: 1.1rem;
-            border-radius: 5px;
-            cursor: pointer;
-            transition: all 0.3s ease;
-            margin-top: 0.5rem;
-        }
-        
-        .submit-button:hover {
-            background-color: var(--secondary-color);
-        }
-        
-        .contact-info-sidebar {
-            display: flex;
-            flex-direction: column;
-            gap: 1.5rem;
-        }
-        
-        .sidebar-item {
-            display: flex;
-            gap: 1rem;
-            padding: 1.5rem;
-            background-color: var(--light-bg);
-            border-radius: 8px;
-        }
-        
-        .sidebar-item i {
-            font-size: 1.8rem;
-            color: var(--primary-color);
-        }
-        
-        .resources-section {
-            background-color: var(--light-bg);
-            padding: 4rem 0;
-        }
-        
-        .resources-section h2 {
-            text-align: center;
-            font-size: 2rem;
-            margin-bottom: 2.5rem;
-            color: var(--secondary-color);
-        }
-        
-        .resources-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 2rem;
-        }
-        
-        .resource-card {
-            background-color: white;
-            border-radius: 10px;
-            padding: 2rem;
-            box-shadow: 0 5px 15px rgba(0,0,0,0,0.05);
-            transition: all 0.3s ease;
-            text-align: center;
-        }
-        
-        .resource-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
-        }
-        
-        .resource-card i {
-            font-size: 2.5rem;
-            color: var(--primary-color);
-            margin-bottom: 1rem;
-        }
-        
-        .resource-card h3 {
-            margin-bottom: 1rem;
-            color: var(--secondary-color);
-        }
-        
-        .resource-card p {
-            color: var(--light-text);
-            margin-bottom: 1.5rem;
-        }
-        
-        .resource-link {
-            color: var(--primary-color);
-            text-decoration: none;
-            font-weight: 600;
-            display: inline-flex;
-            align-items: center;
-            gap: 0.5rem;
-            transition: all 0.3s ease;
-        }
-        
-        .resource-link:hover {
-            color: var(--secondary-color);
-        }
-        
-        .resource-link::after {
-            content: "→";
-            transition: all 0.3s ease;
-        }
-        
-        .resource-link:hover::after {
-            transform: translateX(3px);
-        }
-        
-        @media screen and (max-width: 992px) {
-            .contact-form-wrapper {
-                grid-template-columns: 1fr;
-                gap: 2rem;
-            }
-            
-            .contact-info-sidebar {
-                flex-direction: row;
-                justify-content: space-between;
-            }
-        }
-        
-        @media screen and (max-width: 768px) {
-            .contact-options {
-                flex-direction: column;
-                align-items: center;
-            }
-            
-            .contact-option {
-                max-width: 100%;
-                width: 100%;
-            }
-            
-            .contact-info-sidebar {
-                flex-direction: column;
-            }
-            
-            .sidebar-item {
-                flex-direction: column;
-                text-align: center;
-            }
-            
-            .sidebar-item i {
-                align-self: center;
-            }
-        }
-    </style>
-<script>
-        document.addEventListener('DOMContentLoaded', function() {
-            // FAQ Accordion
-            const faqItems = document.querySelectorAll('.faq-item');
-            
-            faqItems.forEach(item => {
-                const question = item.querySelector('.faq-question');
-                
-                question.addEventListener('click', () => {
-                    // Toggle current item
-                    item.classList.toggle('active');
-                    
-                    // Close other items
-                    faqItems.forEach(otherItem => {
-                        if (otherItem !== item && otherItem.classList.contains('active')) {
-                            otherItem.classList.remove('active');
-                        }
-                    });
-                });
-            });
-            
-            // Contact Form
-            const contactForm = document.querySelector('.contact-form');
-            
-            if (contactForm) {
-                contactForm.addEventListener('submit', function(e) {
-                    e.preventDefault();
-                    
-                    // Get form values
-                    const name = document.getElementById('name').value;
-                    const phone = document.getElementById('phone').value;
-                    const email = document.getElementById('email').value;
-                    const policy = document.getElementById('policy').value;
-                    const issue = document.getElementById('issue').value;
-                    const message = document.getElementById('message').value;
-                    const consent = document.getElementById('consent').checked;
-                    
-                    // Simple validation
-                    if (!name || !phone || !email || !issue || !message || !consent) {
-                        alert('Please fill in all required fields and consent to being contacted.');
-                        return;
-                    }
-                    
-                    // Here you would normally submit the form to your server
-                    // For this demo, we'll just show a success message
-                    const formWrapper = document.querySelector('.contact-form-wrapper');
-                    formWrapper.innerHTML = `
-                        <div class="success-message">
-                            <i class="fas fa-check-circle"></i>
-                            <h3>Thank You!</h3>
-                            <p>Your message has been sent successfully. We'll contact you within 24 hours.</p>
-                            <a href="tel:1-800-555-1234" class="cta-button">Need Immediate Help? Call Now</a>
-                        </div>
-                    `;
-                });
-            }
-            
-            // Smooth scrolling for anchor links
-            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-                anchor.addEventListener('click', function (e) {
-                    e.preventDefault();
-                    
-                    const targetId = this.getAttribute('href');
-                    if (targetId === '#') return;
-                    
-                    const targetElement = document.querySelector(targetId);
-                    
-                    if (targetElement) {
-                        window.scrollTo({
-                            top: targetElement.offsetTop - 80,
-                            behavior: 'smooth'
-                        });
-                    }
-                });
-            });
-            
-            // Add animation to elements when they come into view
-            const observerOptions = {
-                threshold: 0.1,
-                rootMargin: '0px 0px -50px 0px'
-            };
-            
-            const observer = new IntersectionObserver((entries) => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        entry.target.style.opacity = '1';
-                        entry.target.style.transform = 'translateY(0)';
-                    }
-                });
-            }, observerOptions);
-            
-            // Apply observer to specific elements
-            const animateElements = document.querySelectorAll('.feature-card, .solution-card, .testimonial-card, .timeline-item');
-            
-            animateElements.forEach(el => {
-                el.style.opacity = '0';
-                el.style.transform = 'translateY(20px)';
-                el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
-                observer.observe(el);
-            });
-        });
-    </script>
 
     <footer>
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h3>Progressive Billing Help</h3>
-                    <p>Your trusted resource for resolving Progressive insurance billing issues, payment problems, and account questions.</p>
-                    <div class="social-icons">
-                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
-                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
-                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-                    </div>
-                </div>
-                
-                <div class="footer-section">
-                    <h3>Quick Links</h3>
-                    <ul class="footer-links">
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">Billing Options</a></li>
-                        <li><a href="#">Payment Assistance</a></li>
-                        <li><a href="#">Billing Disputes</a></li>
-                        <li><a href="#">Policy Reinstatement</a></li>
-                        <li><a href="about.html">About Us</a></li>
-                    </ul>
-                </div>
-                
-                <div class="footer-section">
-                    <h3>Resources</h3>
-                    <ul class="footer-links">
-                        <li><a href="#">Progressive Billing Guide</a></li>
-                        <li><a href="#">Payment Calculator</a></li>
-                        <li><a href="#">Discount Checklist</a></li>
-                        <li><a href="#">Insurance Coverage Guide</a></li>
-                        <li><a href="privacy.html">Privacy Policy</a></li>
-                        <li><a href="terms.html">Terms of Service</a></li>
-                    </ul>
-                </div>
-                
-                <div class="footer-section">
-                    <h3>Contact Info</h3>
-                    <div class="contact-info">
-                        <div class="contact-item">
-                            <i class="fas fa-phone"></i>
-                            <a href="tel:1-888-414-4406">Billing Assistance</a>
-                        </div>
-                        <div class="contact-item">
-                            <i class="fas fa-envelope"></i>
-                            <a href="mailto:help@payprogressivebill.com">help@payprogressivebill.com</a>
-                        </div>
-                        <div class="contact-item">
-                            <i class="fas fa-clock"></i>
-                            <p>Mon-Fri: 8AM-8PM EST<br>Sat: 9AM-5PM EST<br>Sun: 10AM-4PM EST</p>
-                        </div>
-                    </div>
-                </div>
+        <div class="container footer-content">
+            <div class="footer-links">
+                <a href="#">Privacy</a>
+                <a href="#">Terms</a>
+                <a href="#">Contact</a>
             </div>
-            
-            <div class="copyright">
-                <p>&copy; 2026 Progressive Billing Help. All rights reserved. This website is not affiliated with Progressive Insurance.</p>
-                <p>Progressive is a registered trademark of Progressive Casualty Insurance Company. All other trademarks are the property of their respective owners.</p>
-            </div>
+            <div class="copyright">&copy; 2026 Utility Billing Guide. All rights reserved.</div>
         </div>
     </footer>
 
-    <style>
-        .footer-section {
-            flex: 1;
-            min-width: 200px;
-            margin-bottom: 2rem;
-        }
-        
-        .footer-section h3 {
-            font-size: 1.2rem;
-            margin-bottom: 1.5rem;
-            color: white;
-            position: relative;
-            padding-bottom: 0.5rem;
-        }
-        
-        .footer-section h3::after {
-            content: '';
-            position: absolute;
-            left: 0;
-            bottom: 0;
-            width: 50px;
-            height: 2px;
-            background-color: var(--primary-color);
-        }
-        
-        .footer-section p {
-            margin-bottom: 1.5rem;
-            color: rgba(255,255,255,0.8);
-            line-height: 1.7;
-        }
-        
-        .footer-links {
-            list-style: none;
-        }
-        
-        .footer-links li {
-            margin-bottom: 0.8rem;
-        }
-        
-        .contact-info {
-            display: flex;
-            flex-direction: column;
-            gap: 1rem;
-        }
-        
-        .contact-item {
-            display: flex;
-            align-items: center;
-            gap: 0.8rem;
-        }
-        
-        .contact-item i {
-            color: var(--primary-color);
-            font-size: 1.1rem;
-            width: 20px;
-        }
-        
-        .contact-item a {
-            color: rgba(255,255,255,0.8);
-        }
-        
-        .contact-item p {
-            margin-bottom: 0;
-            color: rgba(255,255,255,0.8);
-            font-size: 0.9rem;
-        }
-        
-        .success-message {
-            text-align: center;
-            padding: 2rem;
-            background-color: white;
-            border-radius: 10px;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
-        }
-        
-        .success-message i {
-            font-size: 3rem;
-            color: #4CAF50;
-            margin-bottom: 1rem;
-        }
-        
-        .success-message h3 {
-            font-size: 1.8rem;
-            margin-bottom: 1rem;
-            color: var(--secondary-color);
-        }
-        
-        .success-message p {
-            margin-bottom: 1.5rem;
-            color: var(--light-text);
-        }
-        
-        @media screen and (max-width: 768px) {
-            .footer-content {
-                flex-direction: column;
-                gap: 2rem;
-            }
-            
-            .footer-section {
-                width: 100%;}
-        
-        .copyright {
-            margin-top: 2rem;
-            padding-top: 2rem;
-            border-top: 1px solid rgba(255,255,255,0.1);
-            font-size: 0.9rem;
-            color: rgba(255,255,255,0.6);
-            text-align: center;
-        }
-        
-        .copyright p {
-            margin-bottom: 0.5rem;
-        }
-    </style>
-    <section class="credibility-section">
-        <div class="container">
-            <div class="credibility-content">
-                <div class="external-links">
-                    <h3>External Resources</h3>
-                    <p>These trusted third-party resources provide additional information about insurance billing and consumer rights:</p>
-                    <ul class="links-list">
-                        <li><a href="https://www.naic.org/" target="_blank" rel="noopener noreferrer">National Association of Insurance Commissioners - State insurance regulations</a></li>
-                        <li><a href="https://www.consumerfinance.gov/" target="_blank" rel="noopener noreferrer">Consumer Financial Protection Bureau - Financial consumer protection</a></li>
-                        <li><a href="https://www.iii.org/" target="_blank" rel="noopener noreferrer">Insurance Information Institute - Industry insights and education</a></li>
-                        <li><a href="https://www.progressive.com/contact/" target="_blank" rel="noopener noreferrer">Progressive Official Contact Page - Direct company resources</a></li>
-                        <li><a href="https://www.naics.com/" target="_blank" rel="noopener noreferrer">National Association of Insurance Commissioners - Consumer assistance resources</a></li>
-                    </ul>
-                </div>
-                
-                <div class="editorial-review">
-                    <h3>Editorial Review</h3>
-                    <div class="reviewer-info">
-                        <div class="reviewer-avatar">MH</div>
-                        <div>
-                            <h4>Michael Hernandez</h4>
-                            <p>Insurance Billing Specialist<br>15+ years in insurance industry</p>
-                        </div>
-                    </div>
-                    <p>This content has been reviewed and verified by Michael Hernandez, a certified insurance billing specialist with over 15 years of experience helping consumers navigate insurance payment issues. All information is regularly updated to reflect current Progressive billing policies and industry standards.</p>
-                </div>
-                
-                <div class="page-info">
-                    <h3>Page Information</h3>
-                    <div class="info-item">
-                        <i class="fas fa-calendar-alt"></i>
-                        <div>
-                            <h4>Last Updated</h4>
-                            <p>July 25, 2026</p>
-                        </div>
-                    </div>
-                    <div class="info-item">
-                        <i class="fas fa-users"></i>
-                        <div>
-                            <h4>Intended Audience</h4>
-                            <p>Progressive Insurance customers experiencing billing issues, payment difficulties, or account questions who need assistance navigating the company's payment systems and options.</p>
-                        </div>
-                    </div>
-                    <div class="info-item">
-                        <i class="fas fa-shield-alt"></i>
-                        <div>
-                            <h4>Accuracy Commitment</h4>
-                            <p>We regularly verify all information with Progressive representatives to ensure accuracy. If you find information that needs updating, please contact us.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="disclaimer-section">
-        <div class="container">
-            <h3>Important Disclaimer</h3>
-            <p>This website is an independent service not affiliated with Progressive Insurance. We provide assistance and guidance for Progressive billing issues but do not represent Progressive Insurance Company. Progressive is a registered trademark of Progressive Casualty Insurance Company. All other trademarks are the property of their respective owners.</p>
-            <p>The information provided on this website is for general informational purposes only and should not be considered legal or financial advice. Always consult with qualified professionals for advice regarding your specific situation.</p>
-        </div>
-    </section>
-
-    <style>
-        .credibility-section {
-            background-color: white;
-            padding: 3rem 0;
-        }
-        
-        .credibility-content {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
-        }
-        
-        .credibility-section h3 {
-            font-size: 1.5rem;
-            margin-bottom: 1rem;
-            color: var(--secondary-color);
-            position: relative;
-            padding-bottom: 0.5rem;
-        }
-        
-        .credibility-section h3::after {
-            content: '';
-            position: absolute;
-            left: 0;
-            bottom: 0;
-            width: 50px;
-            height: 2px;
-            background-color: var(--primary-color);
-        }
-        
-        .links-list {
-            list-style: none;
-            margin-top: 1.5rem;
-        }
-        
-        .links-list li {
-            margin-bottom: 0.8rem;
-            padding-left: 1.5rem;
-            position: relative;
-        }
-        
-        .links-list li::before {
-            content: '•';
-            color: var(--primary-color);
-            position: absolute;
-            left: 0;
-            font-size: 1.2rem;
-            line-height: 1;
-        }
-        
-        .links-list a {
-            color: var(--light-text);
-            text-decoration: none;
-            transition: color 0.3s ease;
-        }
-        
-        .links-list a:hover {
-            color: var(--primary-color);
-        }
-        
-        .reviewer-info {
-            display: flex;
-            align-items: center;
-            gap: 1rem;
-            margin-top: 1.5rem;
-            margin-bottom: 1.5rem;
-        }
-        
-        .reviewer-avatar {
-            width: 60px;
-            height: 60px;
-            border-radius: 50%;
-            background-color: var(--primary-color);
-            color: white;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-weight: bold;
-            font-size: 1.5rem;
-        }
-        
-        .reviewer-info h4 {
-            margin-bottom: 0.2rem;
-            color: var(--secondary-color);
-        }
-        
-        .reviewer-info p {
-            font-size: 0.9rem;
-            color: var(--light-text);
-            margin-bottom: 0;
-        }
-        
-        .info-item {
-            display: flex;
-            gap: 1rem;
-            margin-bottom: 1.5rem;
-        }
-        
-        .info-item i {
-            color: var(--primary-color);
-            font-size: 1.5rem;
-            margin-top: 0.2rem;
-        }
-        
-        .info-item h4 {
-            margin-bottom: 0.5rem;
-            color: var(--secondary-color);
-        }
-        
-        .info-item p {
-            color: var(--light-text);
-            margin-bottom: 0;
-        }
-        
-        .disclaimer-section {
-            background-color: var(--light-bg);
-            padding: 2rem 0;
-        }
-        
-        .disclaimer-section h3 {
-            font-size: 1.3rem;
-            margin-bottom: 1rem;
-            color: var(--secondary-color);
-        }
-        
-        .disclaimer-section p {
-            color: var(--light-text);
-            margin-bottom: 1rem;
-        }
-        
-        @media screen and (max-width: 768px) {
-            .credibility-content {
-                grid-template-columns: 1fr;
-            }
-        }
-    </style>
-    <style>
-        footer {
-            background-color: var(--secondary-color);
-            color: white;
-            padding: 3rem 0 1.5rem;
-        }
-        
-        .footer-content {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 2rem;
-            margin-bottom: 2rem;
-        }
-        
-        .footer-section a {
-            color: rgba(255,255,255,0.8);
-            text-decoration: none;
-            transition: color 0.3s ease;
-        }
-        
-        .footer-section a:hover {
-            color: var(--primary-color);
-        }
-        
-        .footer-links li {
-            margin-bottom: 0.5rem;
-        }
-        
-        .social-icons {
-            display: flex;
-            gap: 1rem;
-            margin-top: 1.5rem;
-        }
-        
-        .social-icons a {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            width: 40px;
-            height: 40px;
-            background-color: rgba(255,255,255,0.1);
-            border-radius: 50%;
-            transition: all 0.3s ease;
-        }
-        
-        .social-icons a:hover {
-            background-color: var(--primary-color);
-            transform: translateY(-3px);
-        }
-        
-        .social-icons i {
-            font-size: 1.2rem;
-        }
-        
-        @media screen and (max-width: 768px) {
-            footer {
-                padding: 2rem 0 1rem;
-            }
-            
-            .footer-content {
-                flex-direction: column;
-                gap: 2rem;
-            }
-            
-            .footer-section {
-                width: 100%;
-            }
-        }
-    </style>
-    
-    <!-- Schema.org Structured Data -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Organization",
-      "name": "Progressive Billing Help",
-      "url": "https://www.payprogressivebill.com",
-      "logo": "https://www.payprogressivebill.com/images/logo.png",
-      "description": "Your trusted resource for resolving Progressive insurance billing issues, payment problems, and account questions.",
-      "contactPoint": {
-        "@type": "ContactPoint",
-        "telephone": "1-888-414-4406",
-        "contactType": "customer service",
-        "areaServed": "US",
-        "availableLanguage": "English"
-      },
-      "sameAs": [
-        "https://www.facebook.com/payprogressivebill",
-        "https://www.twitter.com/payprogressivebill",
-        "https://www.linkedin.com/company/payprogressivebill"
-      ],
-      "address": {
-        "@type": "PostalAddress",
-        "addressCountry": "US"
-      },
-      "serviceType": "Billing Assistance",
-      "hasOfferCatalog": {
-        "@type": "OfferCatalog",
-        "name": "Progressive Billing Services",
-        "itemListElement": [
-          {
-            "@type": "Offer",
-            "itemOffered": {
-              "@type": "Service",
-              "name": "Billing Dispute Resolution",
-              "description": "Help resolve billing disputes with Progressive Insurance"
-            }
-          },
-          {
-            "@type": "Offer",
-            "itemOffered": {
-              "@type": "Service",
-              "name": "Payment Assistance",
-              "description": "Assistance with payment options and arrangements for Progressive bills"
-            }
-          },
-          {
-            "@type": "Offer",
-            "itemOffered": {
-              "@type": "Service",
-              "name": "Policy Reinstatement",
-              "description": "Help with reinstating canceled Progressive insurance policies"
-            }
-          }
-        ]
-      }
-    }
-    </script>
-    
-    <!-- Additional Structured Data for FAQ -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "FAQPage",
-      "mainEntity": [
-        {
-          "@type": "Question",
-          "name": "How can I pay my Progressive bill online for free?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "You can pay your Progressive bill online for free by logging into your account at progressive.com or calling 1-888-414-4406. Once logged in, navigate to the 'Billing' section and select 'Make a Payment.' Progressive doesn't charge a fee for online payments made through their website or mobile app."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "What happens if I miss my Progressive payment due date?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "If you miss your payment due date, Progressive typically offers a grace period (varies by state and policy type). During this time, your coverage remains active, but late fees may apply. You'll receive a cancellation notice before your policy is canceled."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Can I change my Progressive billing due date?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Yes, you can typically change your Progressive billing due date by contacting their customer service. You may need to make an adjustment payment to align with your new preferred date."
-          }
-        }
-      ]
-    }
+    <script>
+        // Simple FAQ toggle
+        document.querySelectorAll('.faq-question').forEach(function(q){
+            q.addEventListener('click', function(){
+                var item = q.parentElement;
+                item.classList.toggle('active');
+            });
+        });
     </script>
 </body>
 </html>
-
-
