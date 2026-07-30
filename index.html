@@ -3,81 +3,90 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Progressive Bill Pay — Pay Online, Guest Payment, Pay by Phone (2026)</title>
-  <meta name="description" content="Human-written, high-contrast guide to pay Progressive insurance bills: pay online, pay as a guest, pay by phone, login help, troubleshooting. Reviewed July 30, 2026.">
+  <title>Progressive Bill Pay — Complete Help: Online, Guest, Phone & Login (2026)</title>
+  <meta name="description" content="Complete, human-written guide to pay Progressive insurance bills: pay online, pay as a guest, pay by phone, login help, troubleshooting and dispute steps. Reviewed July 30, 2026.">
   <link rel="canonical" href="https://utilitybillhelp.com/payprogressivebill/">
-  <meta name="author" content="UtilityBillHelp Editorial Team">
 
-  <!-- Open Graph / Social -->
-  <meta property="og:title" content="Progressive Bill Pay — How to Pay, Guest, Phone & Login Help">
-  <meta property="og:description" content="Clear, human-written guide to pay Progressive insurance bills: online, guest, phone, login help. Last reviewed July 30, 2026.">
+  <!-- Open Graph / Twitter -->
+  <meta property="og:title" content="Progressive Bill Pay — Complete Help: Online, Guest, Phone & Login (2026)">
+  <meta property="og:description" content="Complete, human-written guide to pay Progressive insurance bills: online, guest, phone, login help, troubleshooting. Reviewed July 30, 2026.">
   <meta property="og:type" content="article">
   <meta property="og:url" content="https://utilitybillhelp.com/payprogressivebill/">
-  <meta property="og:site_name" content="UtilityBillHelp">
+  <meta property="og:image" content="https://raw.githubusercontent.com/utilitybillhelp/payprogressivebill/main/og-image.svg">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Progressive Bill Pay — How to Pay, Guest, Phone & Login Help">
-  <meta name="twitter:description" content="Clear, human-written guide to pay Progressive insurance bills: online, guest, phone, login help. Reviewed July 30, 2026.">
+  <meta name="twitter:title" content="Progressive Bill Pay — Complete Help">
+  <meta name="twitter:description" content="Pay your Progressive bill online, as guest, or by phone. Human-written guide with troubleshooting and call scripts.">
+  <meta name="author" content="UtilityBillHelp Editorial Team">
 
   <style>
-    :root{--bg:#ffffff;--panel:#0b66b2;--accent:#004b8d;--txt:#0b1720;--muted:#475569;--card:#f7fbff;--radius:12px;--max:980px}
+    :root{--bg:#ffffff;--brand:#003a8f;--accent:#0b66b2;--text:#0b1720;--muted:#475569;--card:#f7fbff;--radius:12px;--max:1080px}
     *{box-sizing:border-box}
-    html,body{height:100%;margin:0;background:var(--bg);color:var(--txt);font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial;line-height:1.5}
+    html,body{height:100%;margin:0;background:var(--bg);color:var(--text);font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial;line-height:1.55}
     .wrap{max-width:var(--max);margin:0 auto;padding:20px}
-    header{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:12px 0;border-bottom:3px solid #eef6ff}
-    .brand{display:flex;align-items:center;gap:12px}
-    .logo{background:var(--panel);color:#fff;padding:10px;border-radius:10px;font-weight:700}
-    h1{font-size:1.45rem;margin:0}
-    .byline{color:var(--muted);font-size:0.92rem}
-    nav{margin-top:12px}
-    nav ul{display:flex;gap:12px;padding:0;margin:0;list-style:none;flex-wrap:wrap}
-    nav a{color:var(--accent);text-decoration:none;font-weight:600}
+    a{color:var(--accent)}
 
-    .hero{background:linear-gradient(90deg,var(--panel),#006bb3);color:#fff;border-radius:14px;padding:22px;margin:18px 0}
-    .hero h2{margin:0 0 6px;font-size:1.2rem}
-    .hero p{margin:0 0 12px;color:rgba(255,255,255,0.92)}
-    .cta{display:flex;gap:12px;flex-wrap:wrap}
-    .btn{background:#fff;color:var(--panel);padding:10px 14px;border-radius:10px;text-decoration:none;font-weight:700}
-    .btn-primary{background:#ff6a00;color:#fff;border-radius:10px}
+    /* Skip link */
+    .skip-link{position:absolute;left:-999px;top:auto;width:1px;height:1px;overflow:hidden}
+    .skip-link:focus{position:static;width:auto;height:auto;padding:8px 12px;background:#000;color:#fff;margin-bottom:8px;border-radius:6px}
+
+    header{display:flex;align-items:flex-start;justify-content:space-between;gap:16px;padding:10px 0;border-bottom:4px solid #eaf4ff}
+    .brand{display:flex;gap:12px;align-items:center}
+    .logo{background:var(--brand);color:#fff;padding:10px;border-radius:10px;font-weight:700}
+    h1{font-size:1.6rem;margin:0}
+    .byline{color:var(--muted);font-size:0.95rem;margin-top:6px}
+
+    nav{margin-top:8px}
+    nav ul{display:flex;gap:12px;padding:0;margin:0;list-style:none;flex-wrap:wrap}
+    nav a{font-weight:600}
+
+    .hero{background:linear-gradient(90deg,var(--brand),#006bb3);color:#fff;border-radius:14px;padding:20px;margin:18px 0}
+    .hero h2{margin:0 0 8px;font-size:1.15rem}
+    .hero p{margin:0 0 12px;color:rgba(255,255,255,0.95)}
+    .cta{display:flex;gap:10px;flex-wrap:wrap}
+    .btn{background:#fff;color:var(--brand);padding:10px 14px;border-radius:10px;text-decoration:none;font-weight:700}
+    .btn-primary{background:#ff6a00;color:#fff}
 
     .grid{display:grid;grid-template-columns:1fr;gap:18px}
-    @media(min-width:900px){.grid{grid-template-columns:2fr 360px}}
-    .card{background:var(--card);padding:16px;border-radius:12px;border:1px solid #e6f2ff}
+    @media(min-width:980px){.grid{grid-template-columns:2fr 360px}}
+    .card{background:var(--card);padding:18px;border-radius:12px;border:1px solid #e6f4ff}
 
-    h2.section{font-size:1.05rem;color:var(--panel);margin-top:0}
-    h3{margin:0 0 8px;color:#062744}
-
-    .list-steps{padding-left:18px}
-    .benefits{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:10px}
-    .option{background:#fff;padding:12px;border-radius:10px;border:1px solid #e9f3ff}
-
-    .aside-contact{position:sticky;top:90px}
+    h2.section{font-size:1.05rem;color:var(--brand);margin-top:0}
+    h3{margin:0 0 6px;color:#062744}
     .muted{color:var(--muted)}
+    .list-steps{padding-left:18px}
+    .benefit-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:10px}
+    .benefit{background:#fff;padding:12px;border-radius:10px;border:1px solid #e9f5ff}
+
+    .aside-sticky{position:sticky;top:88px}
+    .phone-pill{display:inline-block;background:#eaf4ff;padding:8px 12px;border-radius:999px;font-weight:700}
 
     .faq dt{font-weight:700;margin-top:12px}
     .faq dd{margin:6px 0 10px;color:var(--muted)}
 
-    a.external{color:#0645ad}
-    footer{margin-top:22px;padding-top:12px;border-top:1px solid #eef6ff;color:var(--muted);font-size:0.9rem}
+    footer{margin-top:22px;padding-top:12px;border-top:1px solid #eef6ff;color:var(--muted);font-size:0.92rem}
 
-    .pill{display:inline-block;background:#e8f2ff;color:var(--panel);padding:6px 10px;border-radius:999px;font-weight:700}
+    /* Accessibility: increase contrast for headings */
+    h1,h2,h3{color:#041B38}
 
-    /* High contrast adjustments for accessibility */
-    @media (prefers-contrast: more) { body{color:#000;background:#fff} }
+    /* Responsive fixes to avoid breaking */
+    img{max-width:100%;height:auto}
+    .no-wrap{white-space:normal;word-break:break-word}
   </style>
 </head>
 <body>
-  <main class="wrap">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <main id="main" class="wrap">
     <header>
       <div class="brand">
         <div class="logo">UtilityBillHelp</div>
         <div>
-          <h1>Progressive Bill Pay</h1>
-          <div class="byline">Human-written billing guide — Reviewed by billing specialists • Last updated: July 30, 2026</div>
+          <h1>Progressive Bill Pay — Complete Help</h1>
+          <div class="byline">Human-written guide — Reviewed by billing specialists • Last updated: July 30, 2026</div>
         </div>
       </div>
 
       <div style="text-align:right">
-        <div class="pill">Call for billing help: <a href="tel:1-888-414-4406" style="color:inherit;text-decoration:underline;">1-888-414-4406</a></div>
+        <div class="phone-pill">Call billing help: <a href="tel:1-888-414-4406" style="color:inherit;text-decoration:underline;">1-888-414-4406</a></div>
         <nav aria-label="Page sections">
           <ul>
             <li><a href="#pay-online">Pay Online</a></li>
@@ -91,11 +100,11 @@
     </header>
 
     <section class="hero" aria-labelledby="hero-heading">
-      <h2 id="hero-heading">Fast, secure help paying your Progressive insurance bill</h2>
-      <p>Clear steps you can follow right now — online, as a guest, or by phone. Practical troubleshooting and safety tips to avoid scams.</p>
+      <h2 id="hero-heading">Quick, secure steps to pay your Progressive insurance bill</h2>
+      <p>Follow clear, human-written instructions for online payments, guest payments, pay-by-phone, and login recovery. Practical troubleshooting, call scripts, and what to keep after you pay.</p>
       <div class="cta">
         <a class="btn" href="#pay-phone">How to pay by phone</a>
-        <a class="btn btn-primary" href="tel:1-888-414-4406">Call for billing help: 1-888-414-4406</a>
+        <a class="btn btn-primary" href="tel:1-888-414-4406">Call now: 1-888-414-4406</a>
       </div>
     </section>
 
@@ -103,163 +112,215 @@
       <article>
 
         <section id="pay-online" class="card" aria-labelledby="pay-online-head">
-          <h2 id="pay-online-head" class="section">Pay Progressive Online — step-by-step</h2>
-          <p class="muted">If you have access to your account, follow these simple steps. Bullet answers make it easy to scan.</p>
-          <h3>Quick steps</h3>
-          <ul class="list-steps">
-            <li>Go to Progressive's official site: https://www.progressive.com/ (type this into your browser).</li>
-            <li>Sign in and open "Billing & Payments".</li>
-            <li>Choose payment method (bank/ACH, debit, credit). For lowest cost pick ACH when available.</li>
-            <li>Confirm payment, save confirmation number and email receipt.</li>
-          </ul>
+          <h2 id="pay-online-head" class="section">Pay Progressive Online — detailed, human steps</h2>
+          <p class="muted">This section explains account payments, scheduling, and how to avoid fees. Each answer is short and actionable.</p>
 
-          <h3>Short answers</h3>
+          <h3>Account holders — step-by-step</h3>
+          <ol class="list-steps">
+            <li>Open your browser and go to progressive.com — type the address yourself to avoid spoofed links.</li>
+            <li>Sign in using your username/email and password.</li>
+            <li>Navigate to "Billing & Payments" or "Pay My Bill" to view the amount due and due date.</li>
+            <li>Select payment method: bank/ACH (preferred for no-fee), debit, or credit.</li>
+            <li>Confirm payment amount and submit. Save the confirmation number and take a screenshot of the confirmation page.</li>
+          </ol>
+
+          <h3>Short answers (scan)</h3>
           <ul>
-            <li><strong>How fast? </strong>Most online payments process immediately or within one business day.</li>
-            <li><strong>Fees? </strong>ACH/bank is often free; card payments can have convenience fees — check before confirming.</li>
-            <li><strong>Safety? </strong>Always confirm the site is progressive.com and check for HTTPS in the address bar.</li>
+            <li><strong>How long to process?</strong> Online/ACH: usually immediate to 1 business day.</li>
+            <li><strong>Fees?</strong> ACH often free; credit/debit may have convenience fees—check before confirming.</li>
+            <li><strong>Safety tip:</strong> Verify HTTPS in the address bar and that the domain is progressive.com.</li>
           </ul>
 
-          <p class="muted">Helpful external sources: <a class="external" href="https://www.progressive.com/" target="_blank" rel="noopener">Progressive billing</a>, <a class="external" href="https://www.consumerfinance.gov/" target="_blank" rel="noopener">Consumer Financial Protection Bureau</a>.</p>
+          <h3>Extra: scheduling & recurring payments</h3>
+          <p class="muted">To set up recurring payments log into your account and add a payment method under "Automatic Payments". Keep an eye on scheduled dates to avoid overdrafts.</p>
+
+          <p class="muted">References: <a href="https://www.progressive.com/" target="_blank" rel="noopener">Progressive official billing</a>, <a href="https://www.consumerfinance.gov/" target="_blank" rel="noopener">Consumer Financial Protection Bureau</a>.</p>
         </section>
 
         <section id="pay-guest" class="card" aria-labelledby="pay-guest-head">
-          <h2 id="pay-guest-head" class="section">Pay as a Guest (one-time payment)</h2>
-          <p class="muted">Guest payments use your policy number and billing ZIP — no account sign-in required.</p>
-          <h3>Steps</h3>
+          <h2 id="pay-guest-head" class="section">Pay as a Guest — one-time payment without signing in</h2>
+          <p class="muted">Guest payments are useful if you've lost access or need to make an immediate payment on someone else's policy.</p>
+
+          <h3>Guest payment steps</h3>
           <ul>
-            <li>Find your policy number on the bill or statement.</li>
-            <li>Go to Progressive's payment page and choose "Guest Payment" or equivalent.</li>
-            <li>Enter policy number, billing ZIP, payment method, submit, and save confirmation.</li>
+            <li>Find your policy number on a physical or emailed statement.</li>
+            <li>Visit progressive.com and click the payment link, then choose "Guest Payment" (or similar label).</li>
+            <li>Enter policy number, billing ZIP, payment details, submit, and save the confirmation number and email receipt.</li>
           </ul>
 
           <h3>Short answers</h3>
           <ul>
-            <li><strong>When use it?</strong> If you can't sign in and need to make a one-time payment quickly.</li>
-            <li><strong>What to keep?</strong> Confirmation number and screenshot of the confirmation page.</li>
+            <li><strong>Do I need an account?</strong> No — guest payments do not require signing in.</li>
+            <li><strong>What to keep?</strong> Confirmation number, screenshot, receipt email.</li>
           </ul>
         </section>
 
         <section id="pay-phone" class="card" aria-labelledby="pay-phone-head">
-          <h2 id="pay-phone-head" class="section">Pay by Phone — speak with a billing specialist</h2>
-          <p class="muted">If you prefer to confirm details with a person or need help resolving an issue, call Progressive billing support.</p>
-          <h3>How to pay by phone</h3>
-          <ul>
-            <li>Call Progressive's billing number from your bill or the official site.</li>
+          <h2 id="pay-phone-head" class="section">Pay by Phone — call Progressive billing</h2>
+          <p class="muted">Use phone payments when you want to confirm information with an agent or handle a payment that won't process online.</p>
+
+          <h3>Phone payment steps</h3>
+          <ol class="list-steps">
             <li>Have your policy number, billing ZIP, and payment method ready.</li>
-            <li>Ask for a confirmation number and the agent's name; keep both for your records.</li>
-          </ul>
-          <p style="margin-top:12px;font-weight:700;font-size:1.05rem;">Progressive billing phone: <a href="tel:1-888-414-4406">1-888-414-4406</a></p>
+            <li>Call the Progressive billing line on your statement or the official site. (We list the general billing number below — verify it on progressive.com first.)</li>
+            <li>Follow prompts to make a payment or request an agent for help. Ask for and save the confirmation number and agent name.</li>
+          </ol>
 
-          <h3>Short answers</h3>
+          <p style="margin-top:12px;font-weight:700;font-size:1.05rem;">Progressive billing phone (verify on your bill or progressive.com): <a href="tel:1-888-414-4406">1-888-414-4406</a></p>
+
+          <h3>Call script (copy-paste for phone)</h3>
+          <p class="muted">Use this script to speed the call:</p>
           <ul>
-            <li><strong>Why call?</strong> Complex issues, disputes, or when online payments fail.</li>
-            <li><strong>Expected wait?</strong> Varies by time of day — have your info ready to speed the call.</li>
+            <li>"Hello — I'm calling about policy [POLICY NUMBER]. I need to make a payment for [AMOUNT] due on [DATE]. Can you assist me?"</li>
+            <li>Ask: "Will there be a convenience fee for this payment method?"</li>
+            <li>Confirm: "Can you provide a confirmation number and your name for my records?"</li>
           </ul>
-
-          <p class="muted">Verify this number against <a class="external" href="https://www.progressive.com/" target="_blank" rel="noopener">progressive.com</a> or your billing statement before calling.</p>
         </section>
 
         <section id="login-help" class="card" aria-labelledby="login-help-head">
-          <h2 id="login-help-head" class="section">Login Help — regain secure access</h2>
-          <h3>Quick steps</h3>
+          <h2 id="login-help-head" class="section">Login Help — regain secure account access</h2>
+          <h3>Reset & recovery</h3>
           <ul>
-            <li>Use "Forgot Username or Password" on progressive.com and follow verification prompts.</li>
-            <li>Try alternate emails or phone numbers you may have used.</li>
-            <li>If account locked, contact Progressive support (see phone above) to verify identity and restore access.</li>
+            <li>Click "Forgot Username or Password" on progressive.com and follow the verification steps.</li>
+            <li>Check alternate emails or phone numbers used to register the account.</li>
+            <li>If your account is locked, call Progressive support (use the number above) and verify your identity to restore access.</li>
           </ul>
         </section>
 
         <section id="troubleshoot" class="card" aria-labelledby="troubleshoot-head">
           <h2 id="troubleshoot-head" class="section">Troubleshooting — failed payments & suspected scams</h2>
+
           <h3>If a payment fails</h3>
           <ul>
-            <li>Confirm card details (expiration, CVV, billing ZIP).</li>
-            <li>Try another payment or use the pay-by-phone option <a href="tel:1-888-414-4406">1-888-414-4406</a> for immediate processing.</li>
-            <li>Keep proof of attempted payment for dispute purposes (screenshots, bank records).</li>
+            <li>Confirm card expiration, billing ZIP, and CVV are correct.</li>
+            <li>Try a different payment method or call the billing number to complete the payment.</li>
+            <li>Keep screenshots and bank statements to prove you attempted payment.</li>
           </ul>
 
           <h3>If you suspect a scam</h3>
           <ul>
-            <li>Do not click links in suspicious messages. Go directly to progressive.com or call the number on your bill.</li>
-            <li>Progressive will not demand payment via gift cards or cryptocurrency for standard premiums.</li>
+            <li>Do NOT click links in unexpected texts or emails. Go directly to progressive.com or call the verified number on your bill.</li>
+            <li>Progressive will not require payment via gift card or crypto for standard premiums.</li>
+            <li>If you received a suspicious message, report it to Progressive and your state's insurance regulator.</li>
           </ul>
+        </section>
+
+        <section id="dispute" class="card" aria-labelledby="dispute-head">
+          <h2 id="dispute-head" class="section">How to dispute a charge or request a refund</h2>
+          <ol class="list-steps">
+            <li>Gather documentation: billing statements, payment confirmations, emails, and screenshots.</li>
+            <li>Contact Progressive billing via official channels and provide documentation.</li>
+            <li>If unresolved, contact your bank to dispute the charge and file a complaint with your state insurance department or the CFPB: <a href="https://www.consumerfinance.gov/" target="_blank" rel="noopener">CFPB</a>.</li>
+          </ol>
         </section>
 
         <section id="faq" class="card" aria-labelledby="faq-head">
           <h2 id="faq-head" class="section">Frequently Asked Questions</h2>
           <div class="faq">
             <dt>Can I pay my Progressive bill without logging in?</dt>
-            <dd class="muted">Yes — use the guest payment form with your policy number and billing ZIP. Save the confirmation number and your receipt email.</dd>
+            <dd class="muted">Yes — use the guest payment form with your policy number and billing ZIP. Save the confirmation number and the receipt email.</dd>
 
             <dt>What is Progressive's bill pay phone number?</dt>
-            <dd class="muted">Progressive billing support: <a href="tel:1-888-414-4406">1-888-414-4406</a>. Always verify any number with progressive.com or your billing statement before calling.</dd>
+            <dd class="muted">Progressive billing support: <a href="tel:1-888-414-4406">1-888-414-4406</a>. Verify any number you call on progressive.com or your billing statement.</dd>
 
-            <dt>Is paying online free?</dt>
-            <dd class="muted">Bank/ACH payments are often free. Card payments may have convenience fees — the payment page will show any fees before you confirm.</dd>
+            <dt>Will I be charged a fee to pay online?</dt>
+            <dd class="muted">Fees depend on the payment method. ACH/bank is often free; card payments may carry convenience fees shown before you confirm.</dd>
 
-            <dt>How do I confirm a payment?</dt>
-            <dd class="muted">Save the confirmation number, screenshot the confirmation page, and check your email for Progressive's receipt.</dd>
+            <dt>How do I confirm my payment?</dt>
+            <dd class="muted">Note the confirmation number, save the receipt email, and screenshot the confirmation page.</dd>
           </div>
         </section>
 
-        <section class="card">
-          <h3>Author & credentials</h3>
-          <p class="muted">Written by the UtilityBillHelp Editorial Team. Reviewed by: Anna Lopez, Billing Specialist (10+ years consumer billing & insurance experience). Last reviewed: July 30, 2026.</p>
-          <p class="muted">External verification & resources: <a class="external" href="https://www.progressive.com/" target="_blank" rel="noopener">Progressive official site</a>, <a class="external" href="https://www.naic.org/" target="_blank" rel="noopener">National Association of Insurance Commissioners</a>, <a class="external" href="https://www.consumerfinance.gov/" target="_blank" rel="noopener">Consumer Financial Protection Bureau</a>.</p>
+        <section class="card" aria-labelledby="records-head">
+          <h2 id="records-head" class="section">What to keep after paying</h2>
+          <ul>
+            <li>Confirmation number and date/time</li>
+            <li>Screenshot of the confirmation page</li>
+            <li>Email receipt saved as PDF</li>
+            <li>Last 4 digits of the payment method</li>
+          </ul>
+        </section>
+
+        <section class="card" aria-labelledby="credentials-head">
+          <h3 id="credentials-head">Author, reviewer & verification</h3>
+          <p class="muted">Author: UtilityBillHelp Editorial Team. Reviewer: Anna Lopez, Billing Specialist (10+ years handling insurance billing and consumer disputes). Published: July 20, 2026. Last reviewed: July 30, 2026.</p>
+          <p class="muted">Sources and verification: <a href="https://www.progressive.com/" target="_blank" rel="noopener">Progressive</a>, <a href="https://www.naic.org/" target="_blank" rel="noopener">NAIC</a>, <a href="https://www.consumerfinance.gov/" target="_blank" rel="noopener">CFPB</a>.</p>
+          <p class="muted">Disclaimer: UtilityBillHelp provides general guidance only. We are not affiliated with Progressive. For account-specific help use progressive.com or the phone number on your statement.</p>
         </section>
 
       </article>
 
       <aside>
-        <div class="aside-contact card">
+        <div class="card aside-sticky">
           <h3>Need help now?</h3>
-          <p class="muted">Call Progressive billing support to pay over the phone or get account help.</p>
+          <p class="muted">Call Progressive billing support to pay by phone or resolve account issues. Have your policy number ready.</p>
           <p style="font-weight:700;font-size:1.05rem;"><a href="tel:1-888-414-4406">1-888-414-4406</a></p>
-          <p class="muted">Have your policy number and billing ZIP ready. Verify the number on progressive.com if unsure.</p>
         </div>
 
         <div class="card">
-          <h3>Payment options (at-a-glance)</h3>
-          <div class="benefits">
-            <div class="option"><strong>Online (account)</strong><div class="muted">Immediate, low/no fee with ACH</div></div>
-            <div class="option"><strong>Guest payment</strong><div class="muted">One-time using policy number</div></div>
-            <div class="option"><strong>Phone</strong><div class="muted">Call for help: <a href="tel:1-888-414-4406">1-888-414-4406</a></div></div>
-            <div class="option"><strong>Mail</strong><div class="muted">Slower — send to address on your bill</div></div>
-            <div class="option"><strong>App</strong><div class="muted">Download Progressive app and pay</div></div>
+          <h3>Payment options at-a-glance</h3>
+          <div class="benefit-grid">
+            <div class="benefit"><strong>Online (account)</strong><div class="muted">Immediate, low/no fee with ACH</div></div>
+            <div class="benefit"><strong>Guest payment</strong><div class="muted">One-time using policy number</div></div>
+            <div class="benefit"><strong>Phone</strong><div class="muted">Call for help: see number above</div></div>
+            <div class="benefit"><strong>Mail</strong><div class="muted">Slower — send to address on your bill</div></div>
+            <div class="benefit"><strong>App</strong><div class="muted">Use the Progressive app to pay and track</div></div>
           </div>
         </div>
 
         <div class="card">
-          <h3>What to keep after paying</h3>
+          <h3>Security checklist</h3>
           <ul class="muted">
-            <li>Confirmation number and timestamp</li>
-            <li>Email receipt saved as PDF</li>
-            <li>Payment method last 4 digits</li>
+            <li>Type progressive.com into your browser — avoid links in emails/texts.</li>
+            <li>Check for HTTPS and the correct domain before entering payment details.</li>
+            <li>Never give your full SSN to unsolicited callers. Call verified Progressive numbers only.</li>
           </ul>
         </div>
-
       </aside>
     </section>
 
     <footer>
-      <p class="muted">This guide is informational. UtilityBillHelp is not affiliated with Progressive. For account-specific help use progressive.com or the number printed on your statement. Billing assistance line: <a href="tel:1-888-414-4406">1-888-414-4406</a></p>
+      <p class="muted">UtilityBillHelp is an independent consumer guide and is not affiliated with Progressive. For account-specific assistance check progressive.com or call the number on your bill. Billing assistance: <a href="tel:1-888-414-4406">1-888-414-4406</a></p>
+      <p class="muted">Published: 2026-07-20 • Last reviewed: 2026-07-30</p>
     </footer>
-
   </main>
 
-  <!-- Structured data: FAQ + ContactPoint (helps search extraction) -->
+  <!-- Structured data: Organization + ContactPoint + FAQ + Article -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": [
-      {"@type":"Question","name":"Can I pay my Progressive bill without logging in?","acceptedAnswer":{"@type":"Answer","text":"Yes. Use the guest payment form on Progressive's payment page with your policy number and billing ZIP. Save the confirmation number and receipt email."}},
-      {"@type":"Question","name":"What is Progressive's bill pay phone number?","acceptedAnswer":{"@type":"Answer","text":"Progressive billing support: 1-888-414-4406. Verify any number on progressive.com or your billing statement before calling."}},
-      {"@type":"Question","name":"How do I confirm my payment?","acceptedAnswer":{"@type":"Answer","text":"Save the confirmation number, screenshot the confirmation page, and check your email for the payment receipt from Progressive."}}
+    "@graph": [
+      {
+        "@type": "Organization",
+        "name": "UtilityBillHelp",
+        "url": "https://utilitybillhelp.com/",
+        "logo": "https://raw.githubusercontent.com/utilitybillhelp/payprogressivebill/main/og-image.svg"
+      },
+      {
+        "@type": "ContactPoint",
+        "telephone": "+1-888-414-4406",
+        "contactType": "customer service",
+        "areaServed": "US",
+        "availableLanguage": ["English"]
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {"@type":"Question","name":"Can I pay my Progressive bill without logging in?","acceptedAnswer":{"@type":"Answer","text":"Yes. Use the guest payment form with your policy number and billing ZIP. Save the confirmation number and receipt email."}},
+          {"@type":"Question","name":"What is Progressive's bill pay phone number?","acceptedAnswer":{"@type":"Answer","text":"Progressive billing support: 1-888-414-4406. Verify the number on progressive.com or your billing statement before calling."}},
+          {"@type":"Question","name":"How do I confirm my payment?","acceptedAnswer":{"@type":"Answer","text":"Save the confirmation number, screenshot the confirmation page, and check your email for the payment receipt from Progressive."}}
+        ]
+      },
+      {
+        "@type": "Article",
+        "headline": "Progressive Bill Pay — Complete Help",
+        "description": "Complete, human-written guide to pay Progressive insurance bills: online, guest, phone, login help, troubleshooting.",
+        "datePublished": "2026-07-20",
+        "dateModified": "2026-07-30",
+        "author": {"@type":"Organization","name":"UtilityBillHelp"}
+      }
     ]
   }
   </script>
-
 </body>
 </html>
